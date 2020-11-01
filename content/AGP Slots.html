@@ -133,68 +133,58 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">Installing Memory Modules << <a href='Installing Memory Modules.html'>Previous</a> <a href='Configuring the System BIOS.html'>Next</a> >> Configuring the System BIOS<br /><h1>Introduction to BIOS, CMOS, and Firmware</h1>
-<p id="N10678" lang="">When a computer is turned on, the computer’s microprocessor uses a program called the<span> </span><em class="bold" lang="">BIOS</em><span> </span>(basic input/output system) to start the computer system. The BIOS also manages data flow between the computer's operating system and attached/connected devices, such as the hard drive, video adapter, keyboard, mouse, and printer.</p>
-<p lang="">開啟計算機後，計算機的微處理器會使用稱為BIOS（基本輸入/輸出系統）的程序來啟動計算機系統。 BIOS還管理計算機操作系統和已連接/已連接的設備（例如硬盤驅動器，視頻適配器，鍵盤，鼠標和打印機）之間的數據流。</p>
-<p><img alt="" height="324" src="./../images/image9.png" width="432"/></p>
-<p><span class="imagewrap"><span class="caption" lang="">A basic input/output system (BIOS) chip. Photo used under CC-BY-SA license from<span> </span><a href="https://flic.kr/p/6d1KXy" id="_i_1" lang="" target="_blank">Uwe Hermann</a>.</span></span></p>
+    <div id="tipue_search_content">PCH 7-Expansion Cards, Audio, Video, and Storage << <a href='PCH 7-Expansion Cards, Audio, Video, and Storage.html'>Previous</a> <a href='Processors.html'>Next</a> >> Processors<br /><h1>AGP Slots</h1>
+<p id="N1069F" lang="">Since PCI was too slow for the newest 3D games that were becoming available in the late 1990s, a new standard port, dedicated to graphics, was needed. In 1996, the advanced graphics port (AGP) was announced and was embraced by 3D gamers for their high-speed video needs. It originally was introduced as a 1x variety, but as faster speeds were needed other varieties were added, including 2x, 4x, and 8x AGP. Each variety uses a different amount of power, as shown in the table below.</p>
+<p lang="">由於PCI對於1990年代後期推出的最新3D遊戲而言太慢了，因此需要專門用於圖形的新標準端口。 1996年，高級圖形端口（AGP）正式發布，並因其對高速視頻的需求而受到3D遊戲玩家的歡迎。它最初以1x品種引入，但由於需要更快的速度，因此添加了其他品種，包括2x，4x和8x AGP。每個品種使用不同的電量，如下表所示。</p>
+<p lang=""><img alt="" height="285" src="./../images/未命名.png" width="371"/></p>
+<p lang=""><img alt="" height="247" src="./../images/image2.png" width="370"/></p>
+<p id="N106D8" lang="">AGP card. Photo used under CC-BY-NC-ND license from<span> </span><a href="https://flic.kr/p/bmPX73" id="_i_1" lang="" target="_blank">Grant Hutchinson</a>.</p>
 <p lang=""></p>
-<p id="N1068E" lang="">A computer’s BIOS is the most common example of<span> </span><span class="term" lang="">firmware</span>. Firmware is software on a chip, and is the first software run by the computer when the machine is booted up. The BIOS has several roles, including performing the power-on self-test, which tests and initializes the processor, video card, disk drives, and adapters. The BIOS also includes the low-level “operating system” for the computer, which allows the computer to take input from and give output to the most basic components, including the keyboard, mouse, and disk drives. The BIOS is stored in a ROM (Read-only memory) chip, but can be upgraded through a process call “flashing.”</p>
-<p id="N10694" lang="">While the BIOS is a program that allows the user to make changes to the settings, the settings themselves are stored in the complementary metal-oxide semiconductor, or<span> </span><span class="term" lang="">CMOS</span>. The CMOS is a battery-powered memory chip.</p>
-<p lang="">計算機的BIOS是最常見的固件示例。固件是芯片上的軟件，是計算機啟動時計算機運行的第一個軟件。 BIOS具有多個角色，包括執行開機自檢，該自檢將測試並初始化處理器，視頻卡，磁盤驅動器和適配器。 BIOS還包括計算機的低級“操作系統”，它使計算機可以從最基本的組件（包括鍵盤，鼠標和磁盤驅動器）獲取輸入並提供輸出。 BIOS存儲在ROM（只讀存儲器）芯片中，但可以通過過程調用“刷新”進行升級。</p>
-<p lang="">BIOS是允許用戶更改設置的程序，而設置本身則存儲在互補金屬氧化物半導體或CMOS中。 CMOS是電池供電的存儲芯片。</p>
-<p lang=""><strong>Understanding BIOS and CMOS</strong></p>
-<p id="N106A1" lang="">The BIOS is used to configure common settings, such as the order in which devices are read by the computer. This order is known as the boot order. In addition, the BIOS is also used in the configuration of settings that turn on and off various input/output ports, and the configuration of various CPU settings such as<a aria-describedby="N106A5" class="extra" id=""></a>virtualization<span> </span>and<span> </span><a aria-describedby="N106AE" class="extra" id=""></a>overclocking<span> </span>.</p>
-<p id="N106B6" lang="">Be very careful when making changes to the BIOS. Incorrect settings may keep your computer from booting.</p>
-<p lang="">BIOS用於配置通用設置，例如計算機讀取設備的順序。此命令稱為引導命令。此外，BIOS還用於配置打開和關閉各種輸入/輸出端口的設置，以及各種CPU設置（例如虛擬化和超頻）的配置。</p>
-<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">更改BIOS時要非常小心。不正確的設置可能會使您的計算機無法啟動。</span></pre>
-<p><img alt="" height="296" src="./../images/image10 (1).png" width="440"/></p>
-<p lang=""><span lang="zh-TW"><span class="imagewrap"><span class="caption" lang="">A basic input/output system (BIOS) setup utility. Photo used under CC-BY license from<span> </span><a href="https://flic.kr/p/6u6itT" id="_i_3" lang="" target="_blank">OI123</a>.</span></span></span></p>
-<p lang=""><span lang="zh-TW"><span class="imagewrap"></span></span></p>
-<p lang=""><span lang="zh-TW"><span class="imagewrap"></span></span></p>
-<p id="N106C8" lang="">BIOS configures the following settings:</p>
+<p id="N106E1" lang="">AGP was dominant for a long period of time, but the introduction of PCIe (PCI express) ultimately led to a large decline in popularity, because PCIe speeds were able to outperform AGP and provide a singular slot type for all devices.</p>
+<p id="N106E4" lang="">Motherboards that provide AGP support have a single AGP slot. Several different versions of AGP have been implemented over the years:</p>
 <ul lang="">
-<li lang="">Boot order</li>
-<li lang="">Storage devices (USB drives, hard drives, floppy drives, optical drives)</li>
-<li lang="">Built-in ports (SATA, eSATA, PATA, USB, IEEE-1394, serial, parallel, PS/2)</li>
-<li lang="">AGP, PCI, PCIe slots</li>
-<li lang="">Integrated chipsets (audio, video, network)</li>
-<li lang="">Virtualization</li>
-<li lang="">Clock speed</li>
-<li lang="">Memory (RAM)</li>
-<li lang="">Power management</li>
-<li lang="">Intrusion detection</li>
-<li lang="">Passwords and encryption</li>
-<li lang="">PC health tools (temperature, voltage, etc.)</li>
-<li lang="">Direct access to the web or other services without booting computer (UEFI specific)</li>
+<li lang="">AGP 1.0 1x: Runs at 66 MHz with a data throughput rate of 266 MBps.</li>
+<li lang="">AGP 1.0 2x: Runs at 66 MHz with a data throughput rate of 533 MBps.</li>
+<li lang="">AGP 2.0 4x: Runs at 66 MHz with a data throughput rate of 1066 MBps.</li>
+<li lang="">AGP 3.0 8x: Runs at 66 MHz with a data throughput rate of 2133 MBps.</li>
 </ul>
-<p id="N106F5" lang="">When the power button is pressed on the computer, the first step in the boot process is the power-on self-test, called the<span> </span><span class="term" lang="">POST</span>. Once a successful POST occurs, the BIOS reads the settings from the CMOS, and the BIOS looks for an operating system from the configured boot devices. Once it finds the operating system, the operating system’s boot loader begins the operating system boot process, and turns over control of the computer to the operating system.</p>
-<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">BIOS配置以下設置：
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">AGP在很長一段時間內一直處於主導地位，但是PCIe（PCI Express）的引入最終導致了流行度的大幅下降，因為PCIe的速度能夠超過AGP並為所有設備提供單一的插槽類型。
 
-引導順序
-存儲設備（USB驅動器，硬盤驅動器，軟盤驅動器，光盤驅動器）
-內置端口（SATA，eSATA，PATA，USB，IEEE-1394，串行，並行，PS / 2）
-AGP，PCI，PCIe插槽
-集成芯片組（音頻，視頻，網絡）
-虛擬化
-時鐘速度
-記憶體（RAM）
-能源管理
-入侵檢測
-密碼和加密
-PC健康工具（溫度，電壓等）
-直接訪問Web或其他服務，而無需啟動計算機（特定於UEFI）
-當按下計算機上的電源按鈕時，引導過程的第一步是開機自檢，稱為POST。成功進行POST後，BIOS將從CMOS中讀取設置，然後BIOS從已配置的引導設備中尋找操作系統。找到操作系統後，操作系統的引導加載程序將開始進行操作系統引導過程，並將計算機的控制權移交給操作系統。</span></pre>
-<p lang=""><img alt="" height="293" src="./../images/image11.png" width="544"/></p>
-<p lang="">The boot process:</p>
-<ol lang="">
-<li lang="">Power on computer.</li>
-<li lang="">BIOS performs power-on self-test (POST).</li>
-<li lang="">BIOS reads settings from CMOS.</li>
-<li lang="">BIOS looks for operating system from configured boot device.</li>
-</ol>
-<p class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">引導過程： 打開計算機電源。 BIOS執行開機自檢（POST）。 BIOS從CMOS讀取設置。 BIOS從配置的引導設備中查找操作系統</span></p>
-<br />Installing Memory Modules << <a href='Installing Memory Modules.html'>Previous</a> <a href='Configuring the System BIOS.html'>Next</a> >> Configuring the System BIOS</div>
+提供AGP支持的主板有一個AGP插槽。這些年來，已經實現了AGP的幾種不同版本：<br/></span></pre>
+<ul>
+<li class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">AGP 1.0 1x：以66 MHz運行，數據吞吐率為266 MBps。 </span></li>
+<li class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">AGP 1.0 2x：以66 MHz運行，數據吞吐率為533 MBps。</span></li>
+<li class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">AGP 2.0 4x：以66 MHz運行，數據吞吐率為1066 MBps。</span></li>
+<li class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">AGP 3.0 8x：以66 MHz運行，數據吞吐率為2133 MBps。</span></li>
+</ul>
+<p><img alt="" height="287" src="./../images/image3.png" width="383"/></p>
+<p id="N106FC" lang="">Motherboard with AGP slot identified inside the red rectangle. Photo used under CC-BY-SA license from<span> </span><a href="https://flic.kr/p/kS2Nb" id="_i_3" lang="" target="_blank">Mario Sanchez Bueno</a>.</p>
+<p lang=""></p>
+<p lang=""><strong>PCI Express (PCIe) Expansion Slots</strong></p>
+<p id="N1070D" lang="">PCIe (PCI express) began replacing PCI, PCI-X, and AGP by 2005. Five slot sizes are available for PCIe: x1, x2, x4, x8, and x16. While x8 is an official standard, it is not very common and hard to find on both motherboards and cards. The two most common PCIe cards are the x1 and x16. PCIe x1 was designed to replace the old PCI cards for networking, modems, audio, input/output, and other needs by connecting to the southbridge. PCIe x16, on the other hand, focused on replacing AGP and PCI-X for high-speed graphics cards, and connects to the northbridge. Most motherboards support numerous types of PCIe, with several x1 and either one or two x16 card slots available. Notably, a smaller PCIe card can fit into larger PCIe slots, but not vice versa. For example, a PCIe x2 can fit into a PCIe x8, but a PCIe x8 cannot fit into a PCIe x2.</p>
+<p id="N10710" lang="">PCIe is considered the next generation I/O bus architecture. Rather than a shared bus, each PCIe slot links to a switch that prioritizes and routes data through a point-to-point dedicated connection and provides a serial full-duplex method of transmission. There are different versions of PCIe slots. The maximum number of lanes that can be assigned to the card inserted into the slot is based upon the card’s version. Basic PCIe provides one lane for transmission (x1), at a transfer rate of 250 MBps. It can also provide multiple transmission lanes (x2, x4, x8, x16, x32). Newer versions of PCIe can transfer data at an even higher rate per lane:</p>
+<p lang=""><span lang="zh-TW">PCIe（PCI Express）到2005年開始取代PCI，PCI-X和AGP。PCIe有五個插槽大小可供選擇：x1，x2，x4，x8和x16。雖然x8是官方標準，但它不是很常見，很難在主板和卡上找到。兩種最常見的PCIe卡是x1和x16。 PCIe x1旨在通過連接到南橋來替代用於網絡，調製解調器，音頻，輸入/輸出和其他需求的舊PCI卡。另一方面，PCIe x16專注於替換高速圖形卡的AGP和PCI-X，並連接到北橋。大多數主板支持多種類型的PCIe，具有多個x1和一個或兩個x16卡插槽。值得注意的是，較小的PCIe卡可以放入較大的PCIe插槽中，反之亦然。例如，PCIe x2可以插入PCIe x8中，但PCIe x8不能插入PCIe x2中。 PCIe被認為是下一代I / O總線體系結構。每個PCIe插槽（而不是共享總線）鏈接到交換機，該交換機通過點對點專用連接對數據進行優先級排序和路由，並提供串行全雙工傳輸方法。 PCIe插槽有不同版本。可以為插入插槽中的卡分配的最大通道數取決於卡的版本。基本PCIe提供一個通道用於傳輸（x1），傳輸速率為250 MBps。它還可以提供多個傳輸通道（x2，x4，x8，x16，x32）。較新版本的PCIe可以在每個通道上以更高的速率傳輸數據：</span></p>
+<p><span title="Quick scroll up"></span></p>
+<ul lang="">
+<li lang="">PCIe Version 1: 250 MBps</li>
+<li lang="">PCIe Version 2: 500 MBps</li>
+<li lang="">PCIe Version 3: 1 Gbps</li>
+<li lang="">PCIe Version 4: 2 Gbps</li>
+<li lang="">
+<p id="N10721" lang="">PCIe cards are designated both by size and bandwidth capability. For example, a card may be identified as “single-lane (x1) PCIe with throughput up to 2 Gbps”, which would indicate this card is an x1 size card, and a version 4 card, based on its data transfer rate. Note that “Gbps” refers to “gigabits per second,” the measurement of the rate of data transfer. This should not be confused with a “GB” or “gigabyte,” which refers to the storage capacity of a device. The amount of data lanes in a connection represents the amount of bandwidth between the card and the host: more lanes equals more bandwidth. PCIe x32 cards offer maximum bandwidth, but they are rarely used because of their size.</p>
+</li>
+<li class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"><br/>PCIe版本1：250 MBps PCIe</span></li>
+<li class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">版本2：500 MBps </span></li>
+<li class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">PCIe版本3：1 Gbps PCIe</span></li>
+<li class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">版本4：2 Gbps PCIe卡通過大小和帶寬功能指定。</span></li>
+<li class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">例如，基於其數據傳輸速率，可以將卡標識為“吞吐量高達2 Gbps的單通道（x1）PCIe”，這將表明該卡是x1大小的卡和版本4的卡。請注意，“ Gbps”是指“千兆位每秒”，它是數據傳輸速率的度量。請勿將其與“ GB”或“ GB”混淆，後者是指設備的存儲容量。連接中的數據通道數量表示卡與主機之間的帶寬量：更多的通道等於更多的帶寬。 PCIe x32卡可提供最大帶寬，但是由於其尺寸而很少使用。</span><span title="Quick scroll up"></span></li>
+</ul>
+<p><span lang="zh-TW"><img alt="" height="205" src="./../images/image6.png" width="504"/></span></p>
+<p id="N1075E" lang="">VIA EPIA-M910 mini-ITX board — PCIE-03 riser card. Photo used under CC-BY license from<span> </span><a href="https://flic.kr/p/bqkCSn" id="_i_10" lang="" target="_blank">VIA Gallery</a>.</p>
+<div actguid="d87f2e240a0001dc764503ec583e2db8" class="asx" inlineparams="inlineClient=%2Fsuperactivity%2Fassessment2%2FInlineAssessmentClient.swf&amp;activityMode=delivery&amp;activityContextGUID=d87f2e240a0001dc764503ec583e2db8&amp;userGUID=40923240%40gm.nfu.edu.tw&amp;activityService=%2Fjcourse%2Fa2%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;">
+<div class="activitywrap purpose learnbydoing flash" id="dpch07_lbd01">
+<div class="activityhead"></div>
+<br />PCH 7-Expansion Cards, Audio, Video, and Storage << <a href='PCH 7-Expansion Cards, Audio, Video, and Storage.html'>Previous</a> <a href='Processors.html'>Next</a> >> Processors</div>
         
     <!-- footer -->
       <div class="container">

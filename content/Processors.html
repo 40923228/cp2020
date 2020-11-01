@@ -133,68 +133,29 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">Installing Memory Modules << <a href='Installing Memory Modules.html'>Previous</a> <a href='Configuring the System BIOS.html'>Next</a> >> Configuring the System BIOS<br /><h1>Introduction to BIOS, CMOS, and Firmware</h1>
-<p id="N10678" lang="">When a computer is turned on, the computer’s microprocessor uses a program called the<span> </span><em class="bold" lang="">BIOS</em><span> </span>(basic input/output system) to start the computer system. The BIOS also manages data flow between the computer's operating system and attached/connected devices, such as the hard drive, video adapter, keyboard, mouse, and printer.</p>
-<p lang="">開啟計算機後，計算機的微處理器會使用稱為BIOS（基本輸入/輸出系統）的程序來啟動計算機系統。 BIOS還管理計算機操作系統和已連接/已連接的設備（例如硬盤驅動器，視頻適配器，鍵盤，鼠標和打印機）之間的數據流。</p>
-<p><img alt="" height="324" src="./../images/image9.png" width="432"/></p>
-<p><span class="imagewrap"><span class="caption" lang="">A basic input/output system (BIOS) chip. Photo used under CC-BY-SA license from<span> </span><a href="https://flic.kr/p/6d1KXy" id="_i_1" lang="" target="_blank">Uwe Hermann</a>.</span></span></p>
+    <div id="tipue_search_content">AGP Slots << <a href='AGP Slots.html'>Previous</a> <br /><h1>Processors</h1>
+<p id="N10690" lang="">The central processing unit is also known as a CPU or processor. Processors come in two main architectures: 32-bit and 64-bit. We denote 32-bit processors (or applications designed for these processors) as x86. The 64-bit processors and applications are denoted as x64. You can purchase a CPU from either Intel or AMD and it could be x86 or x64, as both companies make both types. The x64 processors allow for larger file sizes, more memory, and complicated programs to run faster and more efficiently. There are three things that differentiate CPU types: 1) socket type (which CPU will fit in which socket); 2) single or multicore design; and 3) the size of its cache. While Intel and AMD are fully compatible in terms of running the Windows operating system, you must actually get the correct software for your type of CPU if you are running UNIX/Linux.</p>
+<p lang="">中央處理單元也稱為CPU或處理器。處理器採用兩種主要架構：32位和64位。我們將32位處理器（或為這些處理器設計的應用程序）表示為x86。 64位處理器和應用程序表示為x64。您可以從Intel或AMD購買CPU，並且可能是x86或x64，因為兩家公司都生產這兩種類型。 x64處理器允許更大的文件大小，更多的內存以及復雜的程序，以更快，更高效地運行。可以區分CPU類型的三件事：1）套接字類型（哪個CPU將適合哪個套接字）； 2）單核或多核設計； 3）緩存的大小。儘管Intel和AMD在運行Windows操作系統方面是完全兼容的，但是如果您正在運行UNIX / Linux，則實際上必須為您的CPU類型獲得正確的軟件。</p>
+<p lang=""><img alt="A modern processor installed on a motherboard held between two fingers." class="popimg" height="379" id="_i_0" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH07/webcontent/PCH07/image7.jpeg" title="A modern processor installed on a motherboard held between two fingers." width="379"/></p>
+<p id="N10699" lang="">Modern processor installed on motherboard. Copyright:<span> </span><a href="http://www.123rf.com/profile_cookelma" id="_i_1" lang="" target="_blank">cookelma/123 RF Stock Photo</a>.</p>
+<p id="N106A2" lang="">Intel has been making processors for a long time and their contemporary processors all use the land grid array (LGA) socket style. LGA uses spring-loaded “lands” that connect with the bottom of the processor and a hinged clamp mechanism to hold the processor onto the motherboard. The heat sink is then snapped into the mounting holes at the four corners of the processor socket.</p>
+<p lang="">英特爾長期以來一直在生產處理器，其現代處理器均使用陸地柵格陣列（LGA）插槽樣式。 LGA使用彈簧加載的“平台”，該平台與處理器的底部連接，並通過鉸鍊式夾緊機構將處理器固定在主板上。然後將散熱器卡入處理器插槽四個角上的安裝孔。</p>
+<p lang=""><img alt="Spring-loaded lands and a hinged clamp mechanism mounted on the motherboard." class="popimg" height="284" id="_i_2" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH07/webcontent/PCH07/image8.jpeg" title="Spring-loaded lands and a hinged clamp mechanism mounted on the motherboard." width="379"/></p>
+<p id="N106AB" lang="">LGA775 socket, prior to CPU installation. Photo used under CC-BY-NC license from<span> </span><a href="https://www.flickr.com/photos/sntc06/" id="_i_3" lang="" target="_blank">Edward Cai</a>.</p>
+<div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container">
 <p lang=""></p>
-<p id="N1068E" lang="">A computer’s BIOS is the most common example of<span> </span><span class="term" lang="">firmware</span>. Firmware is software on a chip, and is the first software run by the computer when the machine is booted up. The BIOS has several roles, including performing the power-on self-test, which tests and initializes the processor, video card, disk drives, and adapters. The BIOS also includes the low-level “operating system” for the computer, which allows the computer to take input from and give output to the most basic components, including the keyboard, mouse, and disk drives. The BIOS is stored in a ROM (Read-only memory) chip, but can be upgraded through a process call “flashing.”</p>
-<p id="N10694" lang="">While the BIOS is a program that allows the user to make changes to the settings, the settings themselves are stored in the complementary metal-oxide semiconductor, or<span> </span><span class="term" lang="">CMOS</span>. The CMOS is a battery-powered memory chip.</p>
-<p lang="">計算機的BIOS是最常見的固件示例。固件是芯片上的軟件，是計算機啟動時計算機運行的第一個軟件。 BIOS具有多個角色，包括執行開機自檢，該自檢將測試並初始化處理器，視頻卡，磁盤驅動器和適配器。 BIOS還包括計算機的低級“操作系統”，它使計算機可以從最基本的組件（包括鍵盤，鼠標和磁盤驅動器）獲取輸入並提供輸出。 BIOS存儲在ROM（只讀存儲器）芯片中，但可以通過過程調用“刷新”進行升級。</p>
-<p lang="">BIOS是允許用戶更改設置的程序，而設置本身則存儲在互補金屬氧化物半導體或CMOS中。 CMOS是電池供電的存儲芯片。</p>
-<p lang=""><strong>Understanding BIOS and CMOS</strong></p>
-<p id="N106A1" lang="">The BIOS is used to configure common settings, such as the order in which devices are read by the computer. This order is known as the boot order. In addition, the BIOS is also used in the configuration of settings that turn on and off various input/output ports, and the configuration of various CPU settings such as<a aria-describedby="N106A5" class="extra" id=""></a>virtualization<span> </span>and<span> </span><a aria-describedby="N106AE" class="extra" id=""></a>overclocking<span> </span>.</p>
-<p id="N106B6" lang="">Be very careful when making changes to the BIOS. Incorrect settings may keep your computer from booting.</p>
-<p lang="">BIOS用於配置通用設置，例如計算機讀取設備的順序。此命令稱為引導命令。此外，BIOS還用於配置打開和關閉各種輸入/輸出端口的設置，以及各種CPU設置（例如虛擬化和超頻）的配置。</p>
-<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">更改BIOS時要非常小心。不正確的設置可能會使您的計算機無法啟動。</span></pre>
-<p><img alt="" height="296" src="./../images/image10 (1).png" width="440"/></p>
-<p lang=""><span lang="zh-TW"><span class="imagewrap"><span class="caption" lang="">A basic input/output system (BIOS) setup utility. Photo used under CC-BY license from<span> </span><a href="https://flic.kr/p/6u6itT" id="_i_3" lang="" target="_blank">OI123</a>.</span></span></span></p>
-<p lang=""><span lang="zh-TW"><span class="imagewrap"></span></span></p>
-<p lang=""><span lang="zh-TW"><span class="imagewrap"></span></span></p>
-<p id="N106C8" lang="">BIOS configures the following settings:</p>
+<p lang=""></p>
+<p id="N106B4" lang="">Intel processors are broken into families of processors, such as the LGA 775, which contains the Pentium 4, Pentium D, Celeron, Core 2 Duo, Core 2 Quad, and Core 2 Extreme. You should be familiar with the names of the various Intel families, such as Pentium, Celeron, Core, and Sandy Bridge. If you are asked if a certain processor is Intel or AMD, you need to be able to make this determination by the name of the processor alone. All the Intel processors you are asked about in the A+ exam have something in common: two repeated digits. If you see a family name such as LGA 1156, you know it is Intel because the number “1” is repeated in the array number. LGA 1366 has a double “6.” This holds true for all the processors asked about in the A+ exam.</p>
+<p id="N106B7" lang="">Common Intel land grid arrays:</p>
 <ul lang="">
-<li lang="">Boot order</li>
-<li lang="">Storage devices (USB drives, hard drives, floppy drives, optical drives)</li>
-<li lang="">Built-in ports (SATA, eSATA, PATA, USB, IEEE-1394, serial, parallel, PS/2)</li>
-<li lang="">AGP, PCI, PCIe slots</li>
-<li lang="">Integrated chipsets (audio, video, network)</li>
-<li lang="">Virtualization</li>
-<li lang="">Clock speed</li>
-<li lang="">Memory (RAM)</li>
-<li lang="">Power management</li>
-<li lang="">Intrusion detection</li>
-<li lang="">Passwords and encryption</li>
-<li lang="">PC health tools (temperature, voltage, etc.)</li>
-<li lang="">Direct access to the web or other services without booting computer (UEFI specific)</li>
+<li lang="">LGA 775 – Pentium 4, Pentium D, Celeron, Core 2 Duo, Core 2 Quad, Core 2 Extreme</li>
+<li lang="">LGA 1366 – Core i7 9xx, Xeon series</li>
+<li lang="">LGA 1156 – Core i3, Core i5, Core i7 (not 9xx)</li>
+<li lang="">LGA 1155 – Sandy Bridge Core i3, Core i5, Core i7 (second-generation)</li>
 </ul>
-<p id="N106F5" lang="">When the power button is pressed on the computer, the first step in the boot process is the power-on self-test, called the<span> </span><span class="term" lang="">POST</span>. Once a successful POST occurs, the BIOS reads the settings from the CMOS, and the BIOS looks for an operating system from the configured boot devices. Once it finds the operating system, the operating system’s boot loader begins the operating system boot process, and turns over control of the computer to the operating system.</p>
-<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">BIOS配置以下設置：
-
-引導順序
-存儲設備（USB驅動器，硬盤驅動器，軟盤驅動器，光盤驅動器）
-內置端口（SATA，eSATA，PATA，USB，IEEE-1394，串行，並行，PS / 2）
-AGP，PCI，PCIe插槽
-集成芯片組（音頻，視頻，網絡）
-虛擬化
-時鐘速度
-記憶體（RAM）
-能源管理
-入侵檢測
-密碼和加密
-PC健康工具（溫度，電壓等）
-直接訪問Web或其他服務，而無需啟動計算機（特定於UEFI）
-當按下計算機上的電源按鈕時，引導過程的第一步是開機自檢，稱為POST。成功進行POST後，BIOS將從CMOS中讀取設置，然後BIOS從已配置的引導設備中尋找操作系統。找到操作系統後，操作系統的引導加載程序將開始進行操作系統引導過程，並將計算機的控制權移交給操作系統。</span></pre>
-<p lang=""><img alt="" height="293" src="./../images/image11.png" width="544"/></p>
-<p lang="">The boot process:</p>
-<ol lang="">
-<li lang="">Power on computer.</li>
-<li lang="">BIOS performs power-on self-test (POST).</li>
-<li lang="">BIOS reads settings from CMOS.</li>
-<li lang="">BIOS looks for operating system from configured boot device.</li>
-</ol>
-<p class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">引導過程： 打開計算機電源。 BIOS執行開機自檢（POST）。 BIOS從CMOS讀取設置。 BIOS從配置的引導設備中查找操作系統</span></p>
-<br />Installing Memory Modules << <a href='Installing Memory Modules.html'>Previous</a> <a href='Configuring the System BIOS.html'>Next</a> >> Configuring the System BIOS</div>
+</div>
+</div>
+</div><br />AGP Slots << <a href='AGP Slots.html'>Previous</a> </div>
         
     <!-- footer -->
       <div class="container">

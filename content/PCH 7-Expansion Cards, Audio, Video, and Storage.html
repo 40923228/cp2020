@@ -133,68 +133,68 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">Installing Memory Modules << <a href='Installing Memory Modules.html'>Previous</a> <a href='Configuring the System BIOS.html'>Next</a> >> Configuring the System BIOS<br /><h1>Introduction to BIOS, CMOS, and Firmware</h1>
-<p id="N10678" lang="">When a computer is turned on, the computer’s microprocessor uses a program called the<span> </span><em class="bold" lang="">BIOS</em><span> </span>(basic input/output system) to start the computer system. The BIOS also manages data flow between the computer's operating system and attached/connected devices, such as the hard drive, video adapter, keyboard, mouse, and printer.</p>
-<p lang="">開啟計算機後，計算機的微處理器會使用稱為BIOS（基本輸入/輸出系統）的程序來啟動計算機系統。 BIOS還管理計算機操作系統和已連接/已連接的設備（例如硬盤驅動器，視頻適配器，鍵盤，鼠標和打印機）之間的數據流。</p>
-<p><img alt="" height="324" src="./../images/image9.png" width="432"/></p>
-<p><span class="imagewrap"><span class="caption" lang="">A basic input/output system (BIOS) chip. Photo used under CC-BY-SA license from<span> </span><a href="https://flic.kr/p/6d1KXy" id="_i_1" lang="" target="_blank">Uwe Hermann</a>.</span></span></p>
-<p lang=""></p>
-<p id="N1068E" lang="">A computer’s BIOS is the most common example of<span> </span><span class="term" lang="">firmware</span>. Firmware is software on a chip, and is the first software run by the computer when the machine is booted up. The BIOS has several roles, including performing the power-on self-test, which tests and initializes the processor, video card, disk drives, and adapters. The BIOS also includes the low-level “operating system” for the computer, which allows the computer to take input from and give output to the most basic components, including the keyboard, mouse, and disk drives. The BIOS is stored in a ROM (Read-only memory) chip, but can be upgraded through a process call “flashing.”</p>
-<p id="N10694" lang="">While the BIOS is a program that allows the user to make changes to the settings, the settings themselves are stored in the complementary metal-oxide semiconductor, or<span> </span><span class="term" lang="">CMOS</span>. The CMOS is a battery-powered memory chip.</p>
-<p lang="">計算機的BIOS是最常見的固件示例。固件是芯片上的軟件，是計算機啟動時計算機運行的第一個軟件。 BIOS具有多個角色，包括執行開機自檢，該自檢將測試並初始化處理器，視頻卡，磁盤驅動器和適配器。 BIOS還包括計算機的低級“操作系統”，它使計算機可以從最基本的組件（包括鍵盤，鼠標和磁盤驅動器）獲取輸入並提供輸出。 BIOS存儲在ROM（只讀存儲器）芯片中，但可以通過過程調用“刷新”進行升級。</p>
-<p lang="">BIOS是允許用戶更改設置的程序，而設置本身則存儲在互補金屬氧化物半導體或CMOS中。 CMOS是電池供電的存儲芯片。</p>
-<p lang=""><strong>Understanding BIOS and CMOS</strong></p>
-<p id="N106A1" lang="">The BIOS is used to configure common settings, such as the order in which devices are read by the computer. This order is known as the boot order. In addition, the BIOS is also used in the configuration of settings that turn on and off various input/output ports, and the configuration of various CPU settings such as<a aria-describedby="N106A5" class="extra" id=""></a>virtualization<span> </span>and<span> </span><a aria-describedby="N106AE" class="extra" id=""></a>overclocking<span> </span>.</p>
-<p id="N106B6" lang="">Be very careful when making changes to the BIOS. Incorrect settings may keep your computer from booting.</p>
-<p lang="">BIOS用於配置通用設置，例如計算機讀取設備的順序。此命令稱為引導命令。此外，BIOS還用於配置打開和關閉各種輸入/輸出端口的設置，以及各種CPU設置（例如虛擬化和超頻）的配置。</p>
-<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">更改BIOS時要非常小心。不正確的設置可能會使您的計算機無法啟動。</span></pre>
-<p><img alt="" height="296" src="./../images/image10 (1).png" width="440"/></p>
-<p lang=""><span lang="zh-TW"><span class="imagewrap"><span class="caption" lang="">A basic input/output system (BIOS) setup utility. Photo used under CC-BY license from<span> </span><a href="https://flic.kr/p/6u6itT" id="_i_3" lang="" target="_blank">OI123</a>.</span></span></span></p>
-<p lang=""><span lang="zh-TW"><span class="imagewrap"></span></span></p>
-<p lang=""><span lang="zh-TW"><span class="imagewrap"></span></span></p>
-<p id="N106C8" lang="">BIOS configures the following settings:</p>
+    <div id="tipue_search_content">Configuring the System BIOS << <a href='Configuring the System BIOS.html'>Previous</a> <a href='AGP Slots.html'>Next</a> >> AGP Slots<br /><h1>PCH 7-Expansion Cards, Audio, Video, and Storage</h1>
+<p class="sectionContain"><strong>Overview</strong></p>
+<p id="N1066F" lang="">In this lesson, we will be going deeper into the expansion cards that can be plugged into motherboards. We will focus on the installation of a video card. It is important to note that the same principles for installing a video card will apply to installing any expansion card. Next, we will cover the central processing units from two major manufacturers: Intel and AMD. Finally, we will review the storage devices that our computers can use.</p>
+<p lang="">在本課程中，我們將更深入地研究可插入主板的擴展卡。我們將重點介紹視頻卡的安裝。重要的是要注意，安裝視頻卡的相同原理將適用於安裝任何擴展卡。接下來，我們將介紹兩個主要製造商的中央處理單元：英特爾和AMD。最後，我們將回顧計算機可以使用的存儲設備。</p>
+<p lang=""><strong><span title="Quick scroll up">Expansion Slots</span></strong></p>
+<p lang="">Expansion cards are used to increase and expand a computer’s capability. We can add cards that perform a variety of functions, such as adding more USB, serial, or parallel ports. Communication-based cards can also expand the feature set of the computer through adding a modem or network card. Users who want to play more games may find it useful to add a new video card with better graphics capabilities. Users trying to conserve space could add a TV tuner expansion card to allow the computer to act like a TV to watch cable and record shows like a DVR. Most commonly, though, expansion slots are used to add new ports and features that were not originally available when the computer was made, such as eSATA, FireWire, or USB 3.0 ports.</p>
+<p lang="">擴充卡用於增強和擴展計算機的功能。我們可以添加執行各種功能的卡，例如添加更多USB，串行或併行端口。基於通信的卡還可以通過添加調製解調器或網卡來擴展計算機的功能集。想要玩更多遊戲的用戶可能會發現添加具有更好圖形功能的新視頻卡很有用。試圖節省空間的用戶可以添加電視調諧器擴展卡，以使計算機像電視一樣觀看電纜，並像DVR一樣錄製節目。但是，最常見的是，擴展槽用於添加新端口和新功能，例如在創建計算機時最初不可用的端口和功能，例如eSATA，FireWire或USB 3.0端口。</p>
+<div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container"></div>
+<p lang=""><strong>PCI/PCI-X Slots</strong></p>
+<p id="N10685" lang="">An expansion slot is a receptacle on the motherboard for expansion cards. The first expansion slot we will discuss is the oldest covered by the CompTIA A+ hardware exam: the peripheral component interconnect (PCI). PCI was originally developed in the early 1990s to provide an expansion slot for network, video, audio, I/O (input/output), modem, and storage host adapter cards. It replaced older technology, such as the industry standard architecture (ISA) card, as a faster and more robust expansion card slot. It was found as a 32-bit interface supporting a maximum<span> </span><a aria-describedby="N10689" class="extra" id=""></a>bus speed<span> </span>of 33 MHz. Later, it also offered a 64-bit variety at a speed of 66 MHz, but even this was not fast enough for the growing demand of faster CPUs. Along came the upgrade, called PCI-X, which is a faster, 64-bit version running at a bus speed of 133 MHz. This PCI-X, which is found on modern computers that still have a PCI/PCI-X slot, is fully backward compatible with older PCI cards, but if you mix them with newer PCI-X cards, the motherboard defaults back to the slower PCI speeds. The latest version, PCI-X 2.0 supports speeds of up to 266 MHz to 533 MHz, but has been replaced by the PCIe (PCI express) card slot standards for better speed/performance.</p>
+<p id="N10691" lang="">PCI supports a 32- or 64-bit I/O bus providing compatibility with both 486 and Pentium machines. Here are some facts about this slot:</p>
 <ul lang="">
-<li lang="">Boot order</li>
-<li lang="">Storage devices (USB drives, hard drives, floppy drives, optical drives)</li>
-<li lang="">Built-in ports (SATA, eSATA, PATA, USB, IEEE-1394, serial, parallel, PS/2)</li>
-<li lang="">AGP, PCI, PCIe slots</li>
-<li lang="">Integrated chipsets (audio, video, network)</li>
-<li lang="">Virtualization</li>
-<li lang="">Clock speed</li>
-<li lang="">Memory (RAM)</li>
-<li lang="">Power management</li>
-<li lang="">Intrusion detection</li>
-<li lang="">Passwords and encryption</li>
-<li lang="">PC health tools (temperature, voltage, etc.)</li>
-<li lang="">Direct access to the web or other services without booting computer (UEFI specific)</li>
+<li lang="">This bus is processor independent (the CPU and the PCI bus can process concurrently).</li>
+<li lang="">PCI is plug-and-play, meaning that newly installed devices can be detected and configured automatically.</li>
+<li lang="">PCI buses are most commonly used for devices such as sound cards, modems, network cards, and storage device controllers.</li>
+<li lang="">The PCI bus is usually 32 bits wide, although 64-bit versions have been used as well. Running at 33 MHz, it can transfer data at 133 MBps (or 266 MBps for 64-bit versions).</li>
 </ul>
-<p id="N106F5" lang="">When the power button is pressed on the computer, the first step in the boot process is the power-on self-test, called the<span> </span><span class="term" lang="">POST</span>. Once a successful POST occurs, the BIOS reads the settings from the CMOS, and the BIOS looks for an operating system from the configured boot devices. Once it finds the operating system, the operating system’s boot loader begins the operating system boot process, and turns over control of the computer to the operating system.</p>
-<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">BIOS配置以下設置：
-
-引導順序
-存儲設備（USB驅動器，硬盤驅動器，軟盤驅動器，光盤驅動器）
-內置端口（SATA，eSATA，PATA，USB，IEEE-1394，串行，並行，PS / 2）
-AGP，PCI，PCIe插槽
-集成芯片組（音頻，視頻，網絡）
-虛擬化
-時鐘速度
-記憶體（RAM）
-能源管理
-入侵檢測
-密碼和加密
-PC健康工具（溫度，電壓等）
-直接訪問Web或其他服務，而無需啟動計算機（特定於UEFI）
-當按下計算機上的電源按鈕時，引導過程的第一步是開機自檢，稱為POST。成功進行POST後，BIOS將從CMOS中讀取設置，然後BIOS從已配置的引導設備中尋找操作系統。找到操作系統後，操作系統的引導加載程序將開始進行操作系統引導過程，並將計算機的控制權移交給操作系統。</span></pre>
-<p lang=""><img alt="" height="293" src="./../images/image11.png" width="544"/></p>
-<p lang="">The boot process:</p>
-<ol lang="">
-<li lang="">Power on computer.</li>
-<li lang="">BIOS performs power-on self-test (POST).</li>
-<li lang="">BIOS reads settings from CMOS.</li>
-<li lang="">BIOS looks for operating system from configured boot device.</li>
-</ol>
-<p class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">引導過程： 打開計算機電源。 BIOS執行開機自檢（POST）。 BIOS從CMOS讀取設置。 BIOS從配置的引導設備中查找操作系統</span></p>
-<br />Installing Memory Modules << <a href='Installing Memory Modules.html'>Previous</a> <a href='Configuring the System BIOS.html'>Next</a> >> Configuring the System BIOS</div>
+<p id="N106A3" lang="">PCI is an I/O bus that supports both 32- and 64-bit data paths and has been a standard expansion bus since the Intel 80486 (1989) chipset through all versions of Pentium, Apple Computers, and AMD chipsets. While PCI is definitely a legacy architecture, being replaced by PCIe and Thunderbolt interfaces, it is still included on current mainboards and definitely found in service in most computer workstations.</p>
+<p lang="">擴展插槽是主板上用於擴展卡的插槽。我們將討論的第一個擴展插槽是CompTIA A +硬件考試涵蓋的最早的插槽：外圍組件互連（PCI）。 PCI最初是在1990年代初開發的，旨在為網絡，視頻，音頻，I / O（輸入/輸出），調製解調器和存儲主機適配器卡提供擴展插槽。它取代了較早的技術，例如行業標準體系結構（ISA）卡，以提供更快，更強大的擴展卡插槽。發現它是支持最大總線速度為33 MHz的32位接口。後來，它還以66 MHz的速度提供了64位版本，但是即使這樣也不夠快，無法滿足對更快CPU的不斷增長的需求。隨之而來的升級稱為PCI-X，它是一種更快的64位版本，以133 MHz的總線速度運行。該PCI-X在仍然具有PCI / PCI-X插槽的現代計算機中可以找到，它與舊的PCI卡完全向後兼容，但是如果將它們與更新的PCI-X卡混合使用，則主板默認設置為較慢PCI速度。最新版本的PCI-X 2.0支持最高266 MHz至533 MHz的速度，但已被PCIe（PCI Express）卡插槽標準所取代，以實現更好的速度/性能。</p>
+<p lang="">PCI支持32位或64位I / O總線，從而與486和Pentium計算機兼容。以下是有關此廣告位的一些事實：</p>
+<p lang="">該總線獨立於處理器（CPU和PCI總線可以同時處理）。PCI是即插即用的，這意味著可以自動檢測和配置新安裝的設備。PCI總線最常用於聲卡，調製解調器，網卡和存儲設備控制器等設備。儘管也使用了64位版本，但PCI總線通常為32位寬。它以33 MHz的速度運行，可以133 Mbps的速率傳輸數據（對於64位版本，則為266 Mbps的速率）。PCI是支持32位和64位數據路徑的I / O總線，並且自Intel 80486（1989）芯片組通過所有版本的Pentium，Apple Computers和AMD芯片組以來，一直是標準的擴展總線。儘管PCI絕對是一種傳統體系結構，已被PCIe和Thunderbolt接口取代，但它仍包含在當前主板上，並且可以在大多數計算機工作站的服務中找到。</p>
+<p lang=""><strong>Summary</strong></p>
+<ul>
+<li>The PCI bus runs independently of the System bus, which allows faster access times for peripheral devices using the expansion card.</li>
+<li>PCI is PnP in both the BIOS and modern Operating Systems (WinXP +, Linux, and Apple).</li>
+<li>Common PCI bus expansion cards include sound cards, USB cards, Firewire cards, network cards, storage device controller (SCSI) cards, and modem cards.</li>
+<li>PCI versions originally used 32-bit and eventually 64-bit data paths with the following speeds:</li>
+<li>133 MB/s (32-bit at 33 MHz – the standard configuration)</li>
+<li>266 MB/s (32-bit at 66 MHz or 64-bit at 33 MHz)</li>
+<li>533 MB/s (64-bit at 66 MHz)</li>
+</ul>
+<ul>
+<li>PCI總線獨立於系統總線運行，從而可以使用擴展卡更快地訪問外圍設備。</li>
+<li></li>
+<li class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">PCI是BIOS和現代操作系統（WinXP +，Linux和Apple）中的PnP。</span></li>
+<li></li>
+<li class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">常見的PCI總線擴展卡包括聲卡，USB卡，Firewire卡，網絡卡，存儲設備控制器（SCSI）卡和調製解調器卡。</span></li>
+<li></li>
+<li class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">PCI版本最初使用32位數據路徑，最終使用64位數據路徑，速度如下：</span></li>
+<li></li>
+<li class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">133 MB / s（32位，33 MHz –標準配置）</span></li>
+<li></li>
+<li class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">266 MB / s（66 MHz時為32位或33 MHz時為64位）</span></li>
+<li></li>
+<li class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">533 MB / s（66 MHz時為64位）</span></li>
+</ul>
+<p id="N106CC" lang=""><em class="italic" lang="">Source:<span> </span></em><a href="https://en.wikipedia.org/wiki/Conventional_PCI" id="_i_0" lang="" target="_blank">https://en.wikipedia.org/wiki/Conventional_PCI</a></p>
+<p lang=""></p>
+<p lang=""><img alt="" height="377" src="./../images/image1 (3).png" width="504"/></p>
+<div class="opacity">
+<div class="content shadowTwo" role="main">
+<div class="contentContain">
+<div class="section" id="N1067E">
+<div class="sectionContain">
+<p id="N106DD" lang="">Expansion card. Photo used under CC-BY license from<span> </span><a href="https://flic.kr/p/8kE3G6" id="_i_2" lang="" target="_blank">Emilian Robert Vicol</a>.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p></p>
+<br />Configuring the System BIOS << <a href='Configuring the System BIOS.html'>Previous</a> <a href='AGP Slots.html'>Next</a> >> AGP Slots</div>
         
     <!-- footer -->
       <div class="container">

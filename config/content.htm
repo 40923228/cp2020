@@ -62,18 +62,234 @@
 </ol>
 <p id="N106B0" lang="">Important note: Never touch the gold connectors on the modules! Corrosion of the contacts can occur, or the module may be damaged due to electrostatic discharge.</p>
 <p id="N106B3" lang="">To explore more about how to install RAM, visit<span> </span><a href="http://www.wikihow.com/Install-RAM" id="_i_2" lang="" target="_blank">www.wikihow.com/Install-RAM</a>.</p>
-<div><span lang="zh-TW">安裝記憶棒的過程相當容易，但是必須謹慎且精確。要安裝記憶棒（或模塊）： <br/>1.始終確保採取適當的ESD（靜電釋放）保護措施，以確保在安裝過程中不會損壞主板和內存模塊。 2.關閉計算機電源，然後拔下電源線。 3.打開外殼，開始安裝記憶棒。始終將記憶棒放在芯片的側面，而不要緊握金觸點。 4.將內存模塊的連接器與主板上的插槽對齊。 5.確認鎖定卡舌處於打開位置。 6.垂直向下推動模塊，直到卡舌旋轉到鎖定位置（需要用力）。 <br/>重要說明：切勿觸摸模塊上的金色連接器！觸點可能會腐蝕，或者由於靜電放電會損壞模塊。<br/></span>
+</div>
+<p><span lang="zh-TW">安裝記憶棒的過程相當容易，但是必須謹慎且精確。要安裝記憶棒（或模塊）： <br/>1.始終確保採取適當的ESD（靜電釋放）保護措施，以確保在安裝過程中不會損壞主板和內存模塊。 2.關閉計算機電源，然後拔下電源線。 3.打開外殼，開始安裝記憶棒。始終將記憶棒放在芯片的側面，而不要緊握金觸點。 4.將內存模塊的連接器與主板上的插槽對齊。 5.確認鎖定卡舌處於打開位置。 6.垂直向下推動模塊，直到卡舌旋轉到鎖定位置（需要用力）。 <br/>重要說明：切勿觸摸模塊上的金色連接器！觸點可能會腐蝕，或者由於靜電放電會損壞模塊。<br/></span></p>
 <h2>Introduction to BIOS, CMOS, and Firmware</h2>
 <p id="N10678" lang="">When a computer is turned on, the computer’s microprocessor uses a program called the<span> </span><em class="bold" lang="">BIOS</em><span> </span>(basic input/output system) to start the computer system. The BIOS also manages data flow between the computer's operating system and attached/connected devices, such as the hard drive, video adapter, keyboard, mouse, and printer.</p>
 <p lang="">開啟計算機後，計算機的微處理器會使用稱為BIOS（基本輸入/輸出系統）的程序來啟動計算機系統。 BIOS還管理計算機操作系統和已連接/已連接的設備（例如硬盤驅動器，視頻適配器，鍵盤，鼠標和打印機）之間的數據流。</p>
-<div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container"><img alt="" height="324" src="/images/image9.png" width="432"/></div>
-<div class="tw-ta-container hide-focus-ring tw-nfl"><span class="imagewrap"><span class="caption" lang="">A basic input/output system (BIOS) chip. Photo used under CC-BY-SA license from<span> </span><a href="https://flic.kr/p/6d1KXy" id="_i_1" lang="" target="_blank">Uwe Hermann</a>.</span></span></div>
-<div class="tw-ta-container hide-focus-ring tw-nfl">
+<p><img alt="" height="324" src="/images/image9.png" width="432"/></p>
+<p><span class="imagewrap"><span class="caption" lang="">A basic input/output system (BIOS) chip. Photo used under CC-BY-SA license from<span> </span><a href="https://flic.kr/p/6d1KXy" id="_i_1" lang="" target="_blank">Uwe Hermann</a>.</span></span></p>
 <p lang=""></p>
 <p id="N1068E" lang="">A computer’s BIOS is the most common example of<span> </span><span class="term" lang="">firmware</span>. Firmware is software on a chip, and is the first software run by the computer when the machine is booted up. The BIOS has several roles, including performing the power-on self-test, which tests and initializes the processor, video card, disk drives, and adapters. The BIOS also includes the low-level “operating system” for the computer, which allows the computer to take input from and give output to the most basic components, including the keyboard, mouse, and disk drives. The BIOS is stored in a ROM (Read-only memory) chip, but can be upgraded through a process call “flashing.”</p>
 <p id="N10694" lang="">While the BIOS is a program that allows the user to make changes to the settings, the settings themselves are stored in the complementary metal-oxide semiconductor, or<span> </span><span class="term" lang="">CMOS</span>. The CMOS is a battery-powered memory chip.</p>
 <p lang="">計算機的BIOS是最常見的固件示例。固件是芯片上的軟件，是計算機啟動時計算機運行的第一個軟件。 BIOS具有多個角色，包括執行開機自檢，該自檢將測試並初始化處理器，視頻卡，磁盤驅動器和適配器。 BIOS還包括計算機的低級“操作系統”，它使計算機可以從最基本的組件（包括鍵盤，鼠標和磁盤驅動器）獲取輸入並提供輸出。 BIOS存儲在ROM（只讀存儲器）芯片中，但可以通過過程調用“刷新”進行升級。</p>
 <p lang="">BIOS是允許用戶更改設置的程序，而設置本身則存儲在互補金屬氧化物半導體或CMOS中。 CMOS是電池供電的存儲芯片。</p>
 <p lang=""><strong>Understanding BIOS and CMOS</strong></p>
+<p id="N106A1" lang="">The BIOS is used to configure common settings, such as the order in which devices are read by the computer. This order is known as the boot order. In addition, the BIOS is also used in the configuration of settings that turn on and off various input/output ports, and the configuration of various CPU settings such as<a aria-describedby="N106A5" class="extra" id=""></a>virtualization<span> </span>and<span> </span><a aria-describedby="N106AE" class="extra" id=""></a>overclocking<span> </span>.</p>
+<p id="N106B6" lang="">Be very careful when making changes to the BIOS. Incorrect settings may keep your computer from booting.</p>
+<p lang="">BIOS用於配置通用設置，例如計算機讀取設備的順序。此命令稱為引導命令。此外，BIOS還用於配置打開和關閉各種輸入/輸出端口的設置，以及各種CPU設置（例如虛擬化和超頻）的配置。</p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">更改BIOS時要非常小心。不正確的設置可能會使您的計算機無法啟動。</span></pre>
+<p><img alt="" height="296" src="/images/image10 (1).png" width="440"/></p>
+<p lang=""><span lang="zh-TW"><span class="imagewrap"><span class="caption" lang="">A basic input/output system (BIOS) setup utility. Photo used under CC-BY license from<span> </span><a href="https://flic.kr/p/6u6itT" id="_i_3" lang="" target="_blank">OI123</a>.</span></span></span></p>
+<p lang=""><span lang="zh-TW"><span class="imagewrap"></span></span></p>
+<p lang=""><span lang="zh-TW"><span class="imagewrap"></span></span></p>
+<p id="N106C8" lang="">BIOS configures the following settings:</p>
+<ul lang="">
+<li lang="">Boot order</li>
+<li lang="">Storage devices (USB drives, hard drives, floppy drives, optical drives)</li>
+<li lang="">Built-in ports (SATA, eSATA, PATA, USB, IEEE-1394, serial, parallel, PS/2)</li>
+<li lang="">AGP, PCI, PCIe slots</li>
+<li lang="">Integrated chipsets (audio, video, network)</li>
+<li lang="">Virtualization</li>
+<li lang="">Clock speed</li>
+<li lang="">Memory (RAM)</li>
+<li lang="">Power management</li>
+<li lang="">Intrusion detection</li>
+<li lang="">Passwords and encryption</li>
+<li lang="">PC health tools (temperature, voltage, etc.)</li>
+<li lang="">Direct access to the web or other services without booting computer (UEFI specific)</li>
+</ul>
+<p id="N106F5" lang="">When the power button is pressed on the computer, the first step in the boot process is the power-on self-test, called the<span> </span><span class="term" lang="">POST</span>. Once a successful POST occurs, the BIOS reads the settings from the CMOS, and the BIOS looks for an operating system from the configured boot devices. Once it finds the operating system, the operating system’s boot loader begins the operating system boot process, and turns over control of the computer to the operating system.</p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">BIOS配置以下設置：
+
+引導順序
+存儲設備（USB驅動器，硬盤驅動器，軟盤驅動器，光盤驅動器）
+內置端口（SATA，eSATA，PATA，USB，IEEE-1394，串行，並行，PS / 2）
+AGP，PCI，PCIe插槽
+集成芯片組（音頻，視頻，網絡）
+虛擬化
+時鐘速度
+記憶體（RAM）
+能源管理
+入侵檢測
+密碼和加密
+PC健康工具（溫度，電壓等）
+直接訪問Web或其他服務，而無需啟動計算機（特定於UEFI）
+當按下計算機上的電源按鈕時，引導過程的第一步是開機自檢，稱為POST。成功進行POST後，BIOS將從CMOS中讀取設置，然後BIOS從已配置的引導設備中尋找操作系統。找到操作系統後，操作系統的引導加載程序將開始進行操作系統引導過程，並將計算機的控制權移交給操作系統。</span></pre>
+<p lang=""><img alt="" height="293" src="/images/image11.png" width="544"/></p>
+<p lang="">The boot process:</p>
+<ol lang="">
+<li lang="">Power on computer.</li>
+<li lang="">BIOS performs power-on self-test (POST).</li>
+<li lang="">BIOS reads settings from CMOS.</li>
+<li lang="">BIOS looks for operating system from configured boot device.</li>
+</ol>
+<p class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">引導過程： 打開計算機電源。 BIOS執行開機自檢（POST）。 BIOS從CMOS讀取設置。 BIOS從配置的引導設備中查找操作系統</span></p>
+<h2>Configuring the System BIOS</h2>
+<p id="N10678" lang="">To change the settings in the CMOS, the user needs to enter the BIOS. To do this, the user must press a valid key or key combination during the boot process as set by the computer manufacturer. The most common keys used to enter the BIOS are F2 and/or Delete. Typically, the keystroke required to enter the BIOS is displayed on the monitor during the boot process. If the keystroke isn’t displayed, a quick search of the manufacturer’s website will often tell the user the required keystroke to enter the BIOS.</p>
+<p lang="">要更改CMOS中的設置，用戶需要進入BIOS。為此，用戶必須在計算機製造商設置的引導過程中按下有效的鍵或組合鍵。用於進入BIOS的最常用鍵是F2和/或Delete。通常，在引導過程中，進入BIOS所需的擊鍵將顯示在監視器上。如果未顯示擊鍵，則快速搜索製造商的網站通常會告訴用戶輸入BIOS所需的擊鍵。</p>
+<p lang=""><img alt="" height="360" src="/images/image13.png" width="435"/></p>
+<p lang=""><span class="imagewrap"><span class="caption" lang="">A boot screen, which displays the required keystroke to enter the BIOS. Photo used under CC-BY-SA license from<span> </span><a href="https://flic.kr/p/ES7Z6" id="_i_1" lang="" target="_blank">Chip Poutine</a>.</span></span></p>
+<p lang=""><span class="imagewrap"></span></p>
+<p id="N1068A" lang="">The BIOS interface and the keystrokes to enter the BIOS change depending on the BIOS manufacturer. Below are images of the BIOS interface from two different manufacturers. Notice that while the information available is consistent between the two, the interface is slightly different.</p>
+<p lang="">BIOS界面和用於進入BIOS的擊鍵取決於BIOS製造商。下面是來自兩個不同製造商的BIOS接口的圖像。請注意，儘管兩者之間的可用信息是一致的，但界面略有不同。</p>
+<p lang=""><img alt="" height="433" src="/images/image21.jpg" width="518"/></p>
+<p lang=""><span class="imagewrap"><span class="caption" lang="">Phoenix Award BIOS</span></span></p>
+<p lang=""><img alt="" height="434" src="/images/image22.png" width="517"/></p>
+<div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container"><span class="imagewrap"><span class="caption" lang="">Dell BIOS</span></span>
+<div class="section" id="N1069F">
+<div class="sectionContain"></div>
+<div class="sectionContain"></div>
+<div class="sectionContain"><strong>Unified Extensible Firmware Interface (UEFI)</strong></div>
+<div class="sectionContain"></div>
+<div class="sectionContain"><span>Traditionally, there was only a single type of BIOS, which relied fully on text-based menus and the keyboard for input. More recently, most BIOS manufacturers have switched to the unified extensible firmware interface, or </span><span class="term" lang="">UEFI</span><span>. This updated BIOS allows for both keyboard and mouse input, and provides a<span> </span></span><span class="term" lang="">GUI<span> </span></span><span>instead of the standard text-based menus; support for GUID partition tables (</span><em lang="">GPT</em><span>) allowing access to disks up to 2 TB and backward compatibility to legacy partition structures (such as the master boot record (</span><em lang="">MBR</em><span>) and Linux's GRand Unified Bootloader (</span><em lang="">GRUB</em><span>); boot from removable media; a user interface allowing for online connectivity for web access, diagnostics, and file management; and<span> </span></span><em lang="">Secure Boot</em><span><span> </span>which protects pre-operating system code from modification. Some of these UEFI BIOS also include software that allows the user to surf the Internet, play basic games, and use backup programs without ever entering the normal operating system.</span></div>
+<div class="sectionContain"></div>
+<div class="sectionContain">傳統上，只有一種類型的BIOS，它完全依賴於基於文本的菜單和用於輸入的鍵盤。最近，大多數BIOS製造商已切換到統一的可擴展固件接口或UEFI。此更新的BIOS允許鍵盤和鼠標輸入，並提供GUI而不是標準的基於文本的菜單。支持GUID分區表（GPT），允許訪問最大2 TB的磁盤，並向後兼容舊分區結構（例如主啟動記錄（MBR）和Linux的GRand Unified Bootloader（GRUB）；從可移動媒體啟動；用戶界面）允許在線連接以進行Web訪問，診斷和文件管理；以及安全啟動（Secure Boot），可防止操作系統前代碼被修改；其中某些UEFI BIOS還包括允許用戶上網，玩基本遊戲和使用的軟件。無需進入正常操作系統即可備份程序。</div>
+<div class="sectionContain"></div>
+<div class="sectionContain"><strong>Automatic Configuring of BIOS/CMOS</strong></div>
+<div class="sectionContain">
+<div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container">
+<p id="N106DB" lang="">Automatic configuration is a feature of some BIOS. While automatic BIOS configuration does not always create the most optimal settings, it can be quite useful if major errors are occurring to create a safe rollback to a known good state. Automatic configuration options include the BIOS defaults (original/failsafe settings) and setup defaults (optimal settings). There is often a turbo setup, which works toward a quick configuration for a faster system. Automatic configuration of the BIOS is often useful while troubleshooting a system.</p>
+<p lang="">自動配置是某些BIOS的功能。儘管自動BIOS配置並非總能創建最佳設置，但是如果發生重大錯誤以將安全回滾創建到已知的良好狀態，它可能會非常有用。自動配置選項包括BIOS默認設置（原始/故障安全設置）和設置默認設置（最佳設置）。通常有一個turbo設置，可以快速配置以實現更快的系統。在對系統進行故障排除時，BIOS的自動配置通常很有用。</p>
+<p lang=""><img alt="" height="352" src="/images/image15.png" width="470"/></p>
 </div>
-<p lang=""><span lang="zh-TW"></span></p></div></div>
+</div>
+</div>
+</div>
+<p><span class="imagewrap"><span class="caption" lang="">Configuration of BIOS settings. Photo used under CC-BY license from<span> </span><a href="https://flic.kr/p/fmcTBr" id="_i_8" lang="" target="_blank">Linux Screenshots</a>.</span></span></p>
+<p><strong></strong></p>
+<h2>PCH 7-Expansion Cards, Audio, Video, and Storage</h2>
+<p class="sectionContain"><strong>Overview</strong></p>
+<p id="N1066F" lang="">In this lesson, we will be going deeper into the expansion cards that can be plugged into motherboards. We will focus on the installation of a video card. It is important to note that the same principles for installing a video card will apply to installing any expansion card. Next, we will cover the central processing units from two major manufacturers: Intel and AMD. Finally, we will review the storage devices that our computers can use.</p>
+<p lang="">在本課程中，我們將更深入地研究可插入主板的擴展卡。我們將重點介紹視頻卡的安裝。重要的是要注意，安裝視頻卡的相同原理將適用於安裝任何擴展卡。接下來，我們將介紹兩個主要製造商的中央處理單元：英特爾和AMD。最後，我們將回顧計算機可以使用的存儲設備。</p>
+<p lang=""><strong><span title="Quick scroll up">Expansion Slots</span></strong></p>
+<p lang="">Expansion cards are used to increase and expand a computer’s capability. We can add cards that perform a variety of functions, such as adding more USB, serial, or parallel ports. Communication-based cards can also expand the feature set of the computer through adding a modem or network card. Users who want to play more games may find it useful to add a new video card with better graphics capabilities. Users trying to conserve space could add a TV tuner expansion card to allow the computer to act like a TV to watch cable and record shows like a DVR. Most commonly, though, expansion slots are used to add new ports and features that were not originally available when the computer was made, such as eSATA, FireWire, or USB 3.0 ports.</p>
+<p lang="">擴充卡用於增強和擴展計算機的功能。我們可以添加執行各種功能的卡，例如添加更多USB，串行或併行端口。基於通信的卡還可以通過添加調製解調器或網卡來擴展計算機的功能集。想要玩更多遊戲的用戶可能會發現添加具有更好圖形功能的新視頻卡很有用。試圖節省空間的用戶可以添加電視調諧器擴展卡，以使計算機像電視一樣觀看電纜，並像DVR一樣錄製節目。但是，最常見的是，擴展槽用於添加新端口和新功能，例如在創建計算機時最初不可用的端口和功能，例如eSATA，FireWire或USB 3.0端口。</p>
+<div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container"></div>
+<p lang=""><strong>PCI/PCI-X Slots</strong></p>
+<p id="N10685" lang="">An expansion slot is a receptacle on the motherboard for expansion cards. The first expansion slot we will discuss is the oldest covered by the CompTIA A+ hardware exam: the peripheral component interconnect (PCI). PCI was originally developed in the early 1990s to provide an expansion slot for network, video, audio, I/O (input/output), modem, and storage host adapter cards. It replaced older technology, such as the industry standard architecture (ISA) card, as a faster and more robust expansion card slot. It was found as a 32-bit interface supporting a maximum<span> </span><a aria-describedby="N10689" class="extra" id=""></a>bus speed<span> </span>of 33 MHz. Later, it also offered a 64-bit variety at a speed of 66 MHz, but even this was not fast enough for the growing demand of faster CPUs. Along came the upgrade, called PCI-X, which is a faster, 64-bit version running at a bus speed of 133 MHz. This PCI-X, which is found on modern computers that still have a PCI/PCI-X slot, is fully backward compatible with older PCI cards, but if you mix them with newer PCI-X cards, the motherboard defaults back to the slower PCI speeds. The latest version, PCI-X 2.0 supports speeds of up to 266 MHz to 533 MHz, but has been replaced by the PCIe (PCI express) card slot standards for better speed/performance.</p>
+<p id="N10691" lang="">PCI supports a 32- or 64-bit I/O bus providing compatibility with both 486 and Pentium machines. Here are some facts about this slot:</p>
+<ul lang="">
+<li lang="">This bus is processor independent (the CPU and the PCI bus can process concurrently).</li>
+<li lang="">PCI is plug-and-play, meaning that newly installed devices can be detected and configured automatically.</li>
+<li lang="">PCI buses are most commonly used for devices such as sound cards, modems, network cards, and storage device controllers.</li>
+<li lang="">The PCI bus is usually 32 bits wide, although 64-bit versions have been used as well. Running at 33 MHz, it can transfer data at 133 MBps (or 266 MBps for 64-bit versions).</li>
+</ul>
+<p id="N106A3" lang="">PCI is an I/O bus that supports both 32- and 64-bit data paths and has been a standard expansion bus since the Intel 80486 (1989) chipset through all versions of Pentium, Apple Computers, and AMD chipsets. While PCI is definitely a legacy architecture, being replaced by PCIe and Thunderbolt interfaces, it is still included on current mainboards and definitely found in service in most computer workstations.</p>
+<p lang="">擴展插槽是主板上用於擴展卡的插槽。我們將討論的第一個擴展插槽是CompTIA A +硬件考試涵蓋的最早的插槽：外圍組件互連（PCI）。 PCI最初是在1990年代初開發的，旨在為網絡，視頻，音頻，I / O（輸入/輸出），調製解調器和存儲主機適配器卡提供擴展插槽。它取代了較早的技術，例如行業標準體系結構（ISA）卡，以提供更快，更強大的擴展卡插槽。發現它是支持最大總線速度為33 MHz的32位接口。後來，它還以66 MHz的速度提供了64位版本，但是即使這樣也不夠快，無法滿足對更快CPU的不斷增長的需求。隨之而來的升級稱為PCI-X，它是一種更快的64位版本，以133 MHz的總線速度運行。該PCI-X在仍然具有PCI / PCI-X插槽的現代計算機中可以找到，它與舊的PCI卡完全向後兼容，但是如果將它們與更新的PCI-X卡混合使用，則主板默認設置為較慢PCI速度。最新版本的PCI-X 2.0支持最高266 MHz至533 MHz的速度，但已被PCIe（PCI Express）卡插槽標準所取代，以實現更好的速度/性能。</p>
+<p lang="">PCI支持32位或64位I / O總線，從而與486和Pentium計算機兼容。以下是有關此廣告位的一些事實：</p>
+<p lang="">該總線獨立於處理器（CPU和PCI總線可以同時處理）。PCI是即插即用的，這意味著可以自動檢測和配置新安裝的設備。PCI總線最常用於聲卡，調製解調器，網卡和存儲設備控制器等設備。儘管也使用了64位版本，但PCI總線通常為32位寬。它以33 MHz的速度運行，可以133 Mbps的速率傳輸數據（對於64位版本，則為266 Mbps的速率）。PCI是支持32位和64位數據路徑的I / O總線，並且自Intel 80486（1989）芯片組通過所有版本的Pentium，Apple Computers和AMD芯片組以來，一直是標準的擴展總線。儘管PCI絕對是一種傳統體系結構，已被PCIe和Thunderbolt接口取代，但它仍包含在當前主板上，並且可以在大多數計算機工作站的服務中找到。</p>
+<p lang=""><strong>Summary</strong></p>
+<ul>
+<li>The PCI bus runs independently of the System bus, which allows faster access times for peripheral devices using the expansion card.</li>
+<li>PCI is PnP in both the BIOS and modern Operating Systems (WinXP +, Linux, and Apple).</li>
+<li>Common PCI bus expansion cards include sound cards, USB cards, Firewire cards, network cards, storage device controller (SCSI) cards, and modem cards.</li>
+<li>PCI versions originally used 32-bit and eventually 64-bit data paths with the following speeds:</li>
+<li>133 MB/s (32-bit at 33 MHz – the standard configuration)</li>
+<li>266 MB/s (32-bit at 66 MHz or 64-bit at 33 MHz)</li>
+<li>533 MB/s (64-bit at 66 MHz)</li>
+</ul>
+<ul>
+<li>PCI總線獨立於系統總線運行，從而可以使用擴展卡更快地訪問外圍設備。</li>
+<li></li>
+<li class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">PCI是BIOS和現代操作系統（WinXP +，Linux和Apple）中的PnP。</span></li>
+<li></li>
+<li class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">常見的PCI總線擴展卡包括聲卡，USB卡，Firewire卡，網絡卡，存儲設備控制器（SCSI）卡和調製解調器卡。</span></li>
+<li></li>
+<li class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">PCI版本最初使用32位數據路徑，最終使用64位數據路徑，速度如下：</span></li>
+<li></li>
+<li class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">133 MB / s（32位，33 MHz –標準配置）</span></li>
+<li></li>
+<li class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">266 MB / s（66 MHz時為32位或33 MHz時為64位）</span></li>
+<li></li>
+<li class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">533 MB / s（66 MHz時為64位）</span></li>
+</ul>
+<p id="N106CC" lang=""><em class="italic" lang="">Source:<span> </span></em><a href="https://en.wikipedia.org/wiki/Conventional_PCI" id="_i_0" lang="" target="_blank">https://en.wikipedia.org/wiki/Conventional_PCI</a></p>
+<p lang=""></p>
+<p lang=""><img alt="" height="377" src="/images/image1 (3).png" width="504"/></p>
+<div class="opacity">
+<div class="content shadowTwo" role="main">
+<div class="contentContain">
+<div class="section" id="N1067E">
+<div class="sectionContain">
+<p id="N106DD" lang="">Expansion card. Photo used under CC-BY license from<span> </span><a href="https://flic.kr/p/8kE3G6" id="_i_2" lang="" target="_blank">Emilian Robert Vicol</a>.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p></p>
+<h2>AGP Slots</h2>
+<p id="N1069F" lang="">Since PCI was too slow for the newest 3D games that were becoming available in the late 1990s, a new standard port, dedicated to graphics, was needed. In 1996, the advanced graphics port (AGP) was announced and was embraced by 3D gamers for their high-speed video needs. It originally was introduced as a 1x variety, but as faster speeds were needed other varieties were added, including 2x, 4x, and 8x AGP. Each variety uses a different amount of power, as shown in the table below.</p>
+<p lang="">由於PCI對於1990年代後期推出的最新3D遊戲而言太慢了，因此需要專門用於圖形的新標準端口。 1996年，高級圖形端口（AGP）正式發布，並因其對高速視頻的需求而受到3D遊戲玩家的歡迎。它最初以1x品種引入，但由於需要更快的速度，因此添加了其他品種，包括2x，4x和8x AGP。每個品種使用不同的電量，如下表所示。</p>
+<p lang=""><img alt="" height="285" src="/images/未命名.png" width="371"/></p>
+<p lang=""><img alt="" height="247" src="/images/image2.png" width="370"/></p>
+<p id="N106D8" lang="">AGP card. Photo used under CC-BY-NC-ND license from<span> </span><a href="https://flic.kr/p/bmPX73" id="_i_1" lang="" target="_blank">Grant Hutchinson</a>.</p>
+<p lang=""></p>
+<p id="N106E1" lang="">AGP was dominant for a long period of time, but the introduction of PCIe (PCI express) ultimately led to a large decline in popularity, because PCIe speeds were able to outperform AGP and provide a singular slot type for all devices.</p>
+<p id="N106E4" lang="">Motherboards that provide AGP support have a single AGP slot. Several different versions of AGP have been implemented over the years:</p>
+<ul lang="">
+<li lang="">AGP 1.0 1x: Runs at 66 MHz with a data throughput rate of 266 MBps.</li>
+<li lang="">AGP 1.0 2x: Runs at 66 MHz with a data throughput rate of 533 MBps.</li>
+<li lang="">AGP 2.0 4x: Runs at 66 MHz with a data throughput rate of 1066 MBps.</li>
+<li lang="">AGP 3.0 8x: Runs at 66 MHz with a data throughput rate of 2133 MBps.</li>
+</ul>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">AGP在很長一段時間內一直處於主導地位，但是PCIe（PCI Express）的引入最終導致了流行度的大幅下降，因為PCIe的速度能夠超過AGP並為所有設備提供單一的插槽類型。
+
+提供AGP支持的主板有一個AGP插槽。這些年來，已經實現了AGP的幾種不同版本：<br/></span></pre>
+<ul>
+<li class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">AGP 1.0 1x：以66 MHz運行，數據吞吐率為266 MBps。 </span></li>
+<li class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">AGP 1.0 2x：以66 MHz運行，數據吞吐率為533 MBps。</span></li>
+<li class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">AGP 2.0 4x：以66 MHz運行，數據吞吐率為1066 MBps。</span></li>
+<li class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">AGP 3.0 8x：以66 MHz運行，數據吞吐率為2133 MBps。</span></li>
+</ul>
+<p><img alt="" height="287" src="/images/image3.png" width="383"/></p>
+<p id="N106FC" lang="">Motherboard with AGP slot identified inside the red rectangle. Photo used under CC-BY-SA license from<span> </span><a href="https://flic.kr/p/kS2Nb" id="_i_3" lang="" target="_blank">Mario Sanchez Bueno</a>.</p>
+<p lang=""></p>
+<p lang=""><strong>PCI Express (PCIe) Expansion Slots</strong></p>
+<p id="N1070D" lang="">PCIe (PCI express) began replacing PCI, PCI-X, and AGP by 2005. Five slot sizes are available for PCIe: x1, x2, x4, x8, and x16. While x8 is an official standard, it is not very common and hard to find on both motherboards and cards. The two most common PCIe cards are the x1 and x16. PCIe x1 was designed to replace the old PCI cards for networking, modems, audio, input/output, and other needs by connecting to the southbridge. PCIe x16, on the other hand, focused on replacing AGP and PCI-X for high-speed graphics cards, and connects to the northbridge. Most motherboards support numerous types of PCIe, with several x1 and either one or two x16 card slots available. Notably, a smaller PCIe card can fit into larger PCIe slots, but not vice versa. For example, a PCIe x2 can fit into a PCIe x8, but a PCIe x8 cannot fit into a PCIe x2.</p>
+<p id="N10710" lang="">PCIe is considered the next generation I/O bus architecture. Rather than a shared bus, each PCIe slot links to a switch that prioritizes and routes data through a point-to-point dedicated connection and provides a serial full-duplex method of transmission. There are different versions of PCIe slots. The maximum number of lanes that can be assigned to the card inserted into the slot is based upon the card’s version. Basic PCIe provides one lane for transmission (x1), at a transfer rate of 250 MBps. It can also provide multiple transmission lanes (x2, x4, x8, x16, x32). Newer versions of PCIe can transfer data at an even higher rate per lane:</p>
+<p lang=""><span lang="zh-TW">PCIe（PCI Express）到2005年開始取代PCI，PCI-X和AGP。PCIe有五個插槽大小可供選擇：x1，x2，x4，x8和x16。雖然x8是官方標準，但它不是很常見，很難在主板和卡上找到。兩種最常見的PCIe卡是x1和x16。 PCIe x1旨在通過連接到南橋來替代用於網絡，調製解調器，音頻，輸入/輸出和其他需求的舊PCI卡。另一方面，PCIe x16專注於替換高速圖形卡的AGP和PCI-X，並連接到北橋。大多數主板支持多種類型的PCIe，具有多個x1和一個或兩個x16卡插槽。值得注意的是，較小的PCIe卡可以放入較大的PCIe插槽中，反之亦然。例如，PCIe x2可以插入PCIe x8中，但PCIe x8不能插入PCIe x2中。 PCIe被認為是下一代I / O總線體系結構。每個PCIe插槽（而不是共享總線）鏈接到交換機，該交換機通過點對點專用連接對數據進行優先級排序和路由，並提供串行全雙工傳輸方法。 PCIe插槽有不同版本。可以為插入插槽中的卡分配的最大通道數取決於卡的版本。基本PCIe提供一個通道用於傳輸（x1），傳輸速率為250 MBps。它還可以提供多個傳輸通道（x2，x4，x8，x16，x32）。較新版本的PCIe可以在每個通道上以更高的速率傳輸數據：</span></p>
+<p><span title="Quick scroll up"></span></p>
+<ul lang="">
+<li lang="">PCIe Version 1: 250 MBps</li>
+<li lang="">PCIe Version 2: 500 MBps</li>
+<li lang="">PCIe Version 3: 1 Gbps</li>
+<li lang="">PCIe Version 4: 2 Gbps</li>
+<li lang="">
+<p id="N10721" lang="">PCIe cards are designated both by size and bandwidth capability. For example, a card may be identified as “single-lane (x1) PCIe with throughput up to 2 Gbps”, which would indicate this card is an x1 size card, and a version 4 card, based on its data transfer rate. Note that “Gbps” refers to “gigabits per second,” the measurement of the rate of data transfer. This should not be confused with a “GB” or “gigabyte,” which refers to the storage capacity of a device. The amount of data lanes in a connection represents the amount of bandwidth between the card and the host: more lanes equals more bandwidth. PCIe x32 cards offer maximum bandwidth, but they are rarely used because of their size.</p>
+</li>
+<li class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"><br/>PCIe版本1：250 MBps PCIe</span></li>
+<li class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">版本2：500 MBps </span></li>
+<li class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">PCIe版本3：1 Gbps PCIe</span></li>
+<li class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">版本4：2 Gbps PCIe卡通過大小和帶寬功能指定。</span></li>
+<li class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">例如，基於其數據傳輸速率，可以將卡標識為“吞吐量高達2 Gbps的單通道（x1）PCIe”，這將表明該卡是x1大小的卡和版本4的卡。請注意，“ Gbps”是指“千兆位每秒”，它是數據傳輸速率的度量。請勿將其與“ GB”或“ GB”混淆，後者是指設備的存儲容量。連接中的數據通道數量表示卡與主機之間的帶寬量：更多的通道等於更多的帶寬。 PCIe x32卡可提供最大帶寬，但是由於其尺寸而很少使用。</span><span title="Quick scroll up"></span></li>
+</ul>
+<p><span lang="zh-TW"><img alt="" height="205" src="/images/image6.png" width="504"/></span></p>
+<p id="N1075E" lang="">VIA EPIA-M910 mini-ITX board — PCIE-03 riser card. Photo used under CC-BY license from<span> </span><a href="https://flic.kr/p/bqkCSn" id="_i_10" lang="" target="_blank">VIA Gallery</a>.</p>
+<div actguid="d87f2e240a0001dc764503ec583e2db8" class="asx" inlineparams="inlineClient=%2Fsuperactivity%2Fassessment2%2FInlineAssessmentClient.swf&amp;activityMode=delivery&amp;activityContextGUID=d87f2e240a0001dc764503ec583e2db8&amp;userGUID=40923240%40gm.nfu.edu.tw&amp;activityService=%2Fjcourse%2Fa2%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;">
+<div class="activitywrap purpose learnbydoing flash" id="dpch07_lbd01">
+<div class="activityhead"></div>
+<h2 class="activityhead">Processors</h2>
+<p id="N10690" lang="">The central processing unit is also known as a CPU or processor. Processors come in two main architectures: 32-bit and 64-bit. We denote 32-bit processors (or applications designed for these processors) as x86. The 64-bit processors and applications are denoted as x64. You can purchase a CPU from either Intel or AMD and it could be x86 or x64, as both companies make both types. The x64 processors allow for larger file sizes, more memory, and complicated programs to run faster and more efficiently. There are three things that differentiate CPU types: 1) socket type (which CPU will fit in which socket); 2) single or multicore design; and 3) the size of its cache. While Intel and AMD are fully compatible in terms of running the Windows operating system, you must actually get the correct software for your type of CPU if you are running UNIX/Linux.</p>
+<p lang="">中央處理單元也稱為CPU或處理器。處理器採用兩種主要架構：32位和64位。我們將32位處理器（或為這些處理器設計的應用程序）表示為x86。 64位處理器和應用程序表示為x64。您可以從Intel或AMD購買CPU，並且可能是x86或x64，因為兩家公司都生產這兩種類型。 x64處理器允許更大的文件大小，更多的內存以及復雜的程序，以更快，更高效地運行。可以區分CPU類型的三件事：1）套接字類型（哪個CPU將適合哪個套接字）； 2）單核或多核設計； 3）緩存的大小。儘管Intel和AMD在運行Windows操作系統方面是完全兼容的，但是如果您正在運行UNIX / Linux，則實際上必須為您的CPU類型獲得正確的軟件。</p>
+<p lang=""><img alt="A modern processor installed on a motherboard held between two fingers." class="popimg" height="379" id="_i_0" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH07/webcontent/PCH07/image7.jpeg" title="A modern processor installed on a motherboard held between two fingers." width="379"/></p>
+<p id="N10699" lang="">Modern processor installed on motherboard. Copyright:<span> </span><a href="http://www.123rf.com/profile_cookelma" id="_i_1" lang="" target="_blank">cookelma/123 RF Stock Photo</a>.</p>
+<p id="N106A2" lang="">Intel has been making processors for a long time and their contemporary processors all use the land grid array (LGA) socket style. LGA uses spring-loaded “lands” that connect with the bottom of the processor and a hinged clamp mechanism to hold the processor onto the motherboard. The heat sink is then snapped into the mounting holes at the four corners of the processor socket.</p>
+<p lang="">英特爾長期以來一直在生產處理器，其現代處理器均使用陸地柵格陣列（LGA）插槽樣式。 LGA使用彈簧加載的“平台”，該平台與處理器的底部連接，並通過鉸鍊式夾緊機構將處理器固定在主板上。然後將散熱器卡入處理器插槽四個角上的安裝孔。</p>
+<p lang=""><img alt="Spring-loaded lands and a hinged clamp mechanism mounted on the motherboard." class="popimg" height="284" id="_i_2" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH07/webcontent/PCH07/image8.jpeg" title="Spring-loaded lands and a hinged clamp mechanism mounted on the motherboard." width="379"/></p>
+<p id="N106AB" lang="">LGA775 socket, prior to CPU installation. Photo used under CC-BY-NC license from<span> </span><a href="https://www.flickr.com/photos/sntc06/" id="_i_3" lang="" target="_blank">Edward Cai</a>.</p>
+<div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container">
+<p lang=""></p>
+<p lang=""></p>
+<p id="N106B4" lang="">Intel processors are broken into families of processors, such as the LGA 775, which contains the Pentium 4, Pentium D, Celeron, Core 2 Duo, Core 2 Quad, and Core 2 Extreme. You should be familiar with the names of the various Intel families, such as Pentium, Celeron, Core, and Sandy Bridge. If you are asked if a certain processor is Intel or AMD, you need to be able to make this determination by the name of the processor alone. All the Intel processors you are asked about in the A+ exam have something in common: two repeated digits. If you see a family name such as LGA 1156, you know it is Intel because the number “1” is repeated in the array number. LGA 1366 has a double “6.” This holds true for all the processors asked about in the A+ exam.</p>
+<p id="N106B7" lang="">Common Intel land grid arrays:</p>
+<ul lang="">
+<li lang="">LGA 775 – Pentium 4, Pentium D, Celeron, Core 2 Duo, Core 2 Quad, Core 2 Extreme</li>
+<li lang="">LGA 1366 – Core i7 9xx, Xeon series</li>
+<li lang="">LGA 1156 – Core i3, Core i5, Core i7 (not 9xx)</li>
+<li lang="">LGA 1155 – Sandy Bridge Core i3, Core i5, Core i7 (second-generation)</li>
+</ul>
+</div>
+</div>
+</div>
