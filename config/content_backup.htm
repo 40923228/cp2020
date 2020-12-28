@@ -576,10 +576,10 @@ PC健康工具（溫度，電壓等）
 <p id="happy-coding">Happy coding!</p>
 <p><span>祝您編碼愉快！</span></p>
 <p><span></span></p>
-<h2><span>EX20</span></h2>
+<h2>EX20</h2>
 <p><br/>Element Search<span> </span><img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/><span>元素搜索 </span><img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/></p>
 <div><i></i></div>
-<p><br/>Exercise 20<span>練習20</span>(and<span> </span><a href="https://www.practicepython.org/solution/2014/11/30/20-element-search-solutions.html">Solution</a>)<span>練習20（和</span><a href="https://www.practicepython.org/solution/2014/11/30/20-element-search-solutions.html"><span>解決方案</span></a><span>）</span></p>
+<p><br/>Exercise 20<span>練習20</span>(and<span> </span><a href="https://www.practicepython.org/solution/2014/11/30/20-element-search-solutions.html">Solution</a>)</p>
 <p>Write a function that takes an ordered list of numbers (a list where the elements are in order from smallest to largest) and another number. The function decides whether or not the given number is inside the list and returns (then prints) an appropriate boolean.</p>
 <p><span>編寫一個函數，該函數接受一個有序的數字列表（一個元素從最小到最大的順序列表）和另一個數字。</span><span>該函數確定給定的數字是否在列表中，並返回（然後打印）適當的布爾值。</span></p>
 <p>Extras:<span>附加功能：</span></p>
@@ -690,6 +690,99 @@ PC健康工具（溫度，電壓等）
 <p><span>在編寫解決方案時，請首先嘗試在不進行二進制搜索的情況下編寫它。</span><span>然後，當您想嘗試實現二進制搜索時，編寫一個單獨的函數。</span><span>在解決方案中，我將給出一個示例，說明如何使用Python編寫二進制搜索。</span></p>
 <p>Happy coding!</p>
 <p><span>祝您編碼愉快！</span></p>
+<h2><span>EX32</span></h2>
+<p><br/>Hangman<span> </span><img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/><span> </span><img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/><span>猜詞遊戲 <img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/><span><span> </span></span><img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/></span></p>
+<div><i></i></div>
+<p><br/>Exercise 32 (and<span> </span><a href="https://www.practicepython.org/solution/2017/01/18/32-hangman-solutions.html">Solution</a>)<span>練習32（和</span><a href="https://www.practicepython.org/solution/2017/01/18/32-hangman-solutions.html"><span>解決方案</span></a><span>）</span></p>
+<p><em>This exercise is Part 3 of 3 of the Hangman exercise series. The other exercises are:<span> </span><a href="https://www.practicepython.org/exercise/2016/09/24/30-pick-word.html">Part 1</a><span> </span>and<span> </span><a href="https://www.practicepython.org/exercise/2017/01/02/31-guess-letters.html">Part 2</a>.</em></p>
+<p><em><span>本練習是《 Hangman》練習系列3的第3部分。其他練習是：</span><a href="https://www.practicepython.org/exercise/2016/09/24/30-pick-word.html"><span>第1</span></a><span></span><a href="https://www.practicepython.org/exercise/2017/01/02/31-guess-letters.html"><span>部分</span></a><span>和<a href="https://www.practicepython.org/exercise/2017/01/02/31-guess-letters.html">第2部分</a>。</span></em></p>
+<p><em>You can start your Python journey anywhere, but to finish this exercise you will have to have finished Parts 1 and 2 or use the solutions (<a href="https://www.practicepython.org/solution/2016/10/15/30-pick-word-solutions.html">Part 1</a><span> </span>and<span> </span><a href="https://www.practicepython.org/solution/2017/01/08/31-guess-letters-solutions.html">Part 2</a>).</em></p>
+<p><em><span>您可以在任何地方開始Python之旅，但是要完成本練習，您將必須完成第1</span><a href="https://www.practicepython.org/solution/2016/10/15/30-pick-word-solutions.html"><span>部分</span></a><span>和</span><a href="https://www.practicepython.org/solution/2017/01/08/31-guess-letters-solutions.html"><span>第2</span></a><span><a href="https://www.practicepython.org/solution/2016/10/15/30-pick-word-solutions.html">部分</a>或使用解決方案（<a href="https://www.practicepython.org/solution/2016/10/15/30-pick-word-solutions.html">第1</a><a href="https://www.practicepython.org/solution/2017/01/08/31-guess-letters-solutions.html">部分</a>和<a href="https://www.practicepython.org/solution/2017/01/08/31-guess-letters-solutions.html">第2部分</a>）。</span></em></p>
+<p>In this exercise, we will finish building Hangman. In the game of Hangman, the player only has 6 incorrect guesses (head, body, 2 legs, and 2 arms) before they lose the game.</p>
+<p><span>在本練習中，我們將完成“ Hangman”的構建。</span><span>在《 Hangman》遊戲中，玩家在輸掉遊戲之前只有6個錯誤的猜測（頭部，身體，2條腿和2條手臂）。</span></p>
+<p>In Part 1, we loaded a random word list and picked a word from it. In Part 2, we wrote the logic for guessing the letter and displaying that information to the user. In this exercise, we have to put it all together and add logic for handling guesses.</p>
+<p><span>在第1部分中，我們加載了一個隨機單詞列表並從中選擇一個單詞。</span><span>在第2部分中，我們編寫了猜測字母並將該信息顯示給用戶的邏輯。</span><span>在本練習中，我們必須將所有內容放在一起並添加邏輯以處理猜測。</span></p>
+<p>Copy your code from Parts 1 and 2 into a new file as a starting point. Now add the following features:</p>
+<p><span>將您的代碼從第1部分和第2部分複製到一個新文件中作為起點。</span><span>現在添加以下功能：</span></p>
+<ul>
+<li>Only let the user guess 6 times, and tell the user how many guesses they have left.</li>
+<li><span><span>僅讓用戶猜測6次，然後告訴用戶他們還剩下多少猜測。</span></span></li>
+<li>Keep track of the letters the user guessed. If the user guesses a letter they already guessed, don’t penalize them - let them guess again.</li>
+<li><span><span>跟踪用戶猜測的字母。</span><span>如果用戶猜出了他們已經猜出的字母，請不要對它們進行懲罰-讓他們再猜一次。</span></span></li>
+</ul>
+<p>Optional additions:<span>可選的補充：</span></p>
+<ul>
+<li>When the player wins or loses, let them start a new game.</li>
+<li><span><span>當玩家贏或輸時，讓他們開始新的遊戲。</span></span></li>
+<li>Rather than telling the user<span> </span><code class="highlighter-rouge">"You have 4 incorrect guesses left"</code>, display some picture art for the Hangman.<span> </span><em>This is challenging - do the other parts of the exercise first!</em></li>
+<li><span><span>不要告訴用戶</span></span><code class="highlighter-rouge">"You have 4 incorrect guesses left"</code><span><span>，</span><span>而是</span><span>為the子手展示一些圖畫。</span></span><em><span><span>這具有挑戰性-首先進行練習的其他部分！</span></span></em><em></em></li>
+</ul>
+<p>Your solution will be a lot cleaner if you make use of functions to help you!</p>
+<p><span>如果您使用功能來幫助您，您的解決方案將變得更加干淨！</span></p>
+<p>Concepts概念</p>
+<ul>
+<li>Sets</li>
+<li>Code organization</li>
+</ul>
+<p>Sets<span>套裝</span></p>
+<p>We already discussed sets<span> </span><a href="https://www.practicepython.org/exercise/2014/05/15/14-list-remove-duplicates.html">in Exercise 14</a>, but here is a brief summary:</p>
+<p><span>我們已經</span><a href="https://www.practicepython.org/exercise/2014/05/15/14-list-remove-duplicates.html"><span><span>在練習14中</span></span></a><span><span>討論了集合</span><span>，但這是一個簡短的摘要：</span></span></p>
+<ul>
+<li>Sets, like lists, store a collection of items</li>
+<li><span><span>集合（如列表）存儲項目的集合</span></span></li>
+<li>The collection of items in a set are unique. There cannot be any repeated elements.</li>
+<li><span><span>集合中的項目集合是唯一的。</span><span>不能有任何重複的元素。</span></span></li>
+</ul>
+<p>The only “gotcha” is that you cannot have a set of lists - each element in the set must be<span> </span><a href="https://docs.python.org/3.6/glossary.html#term-hashable">hashable</a>. Basically this means you can’t have elements that can change in a set, so the objects in your set should be integers or strings. The reason and distinction are not super important; the most important thing to know is that sets are most useful when you want a set of integers or strings, rather than a set of lists.</p>
+<p><span>唯一的“陷阱”是您不能擁有一組列表-列表中的每個元素都必須是可</span><a href="https://docs.python.org/3.6/glossary.html#term-hashable"><span><span>哈希的</span></span></a><span><span>。</span><span>基本上，這意味著您不能在集合中更改任何元素，因此集合中的對象應為整數或字符串。</span><span>原因和區別並不重要。</span><span>要知道的最重要的一點是，當您需要一組整數或字符串而不是一組列表時，集合最有用。</span></span></p>
+<p>In Python:<span>在Python中：</span></p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">my_list</span><span class="p">)</span>
+<span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">my_set</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="p">}</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">my_set</span><span class="p">)</span>
+<span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="p">}</span></code></pre>
+</figure>
+<p>To add elements to a set, use the<span> </span><code class="highlighter-rouge">.add()</code><span> </span>method:</p>
+<p><span>要將元素添加到集合中，請使用</span><code class="highlighter-rouge">.add()</code><span><span>方法：</span></span></p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="n">my_set</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>  <span class="c"># makes an empty set</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">my_set</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>  <span class="c"># adds the number 5</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">my_set</span><span class="p">)</span>
+<span class="p">{</span><span class="mi">5</span><span class="p">}</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">my_set</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s">"Michele"</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">my_set</span><span class="p">)</span>
+<span class="p">{</span><span class="mi">5</span><span class="p">,</span> <span class="s">"Michele"</span><span class="p">}</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">my_set</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">my_set</span><span class="p">)</span>
+<span class="p">{</span><span class="mi">5</span><span class="p">,</span> <span class="s">"Michele"</span><span class="p">}</span></code></pre>
+</figure>
+<p>The advantage of sets is that all the elements in it are unique. This makes it very easy to check whether an element is already in the set. All you need to do is ask<span> </span><code class="highlighter-rouge">elem in my_set</code>:</p>
+<p><span>集的優點是集中的所有元素都是唯一的。這使得檢查元素是否已經在集合中變得非常容易。您需要做的只是問</span><code class="highlighter-rouge">elem in my_set</code><span><span>：</span></span></p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="n">my_set</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">}</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">1</span> <span class="ow">in</span> <span class="n">my_set</span>
+<span class="bp">True</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">4</span> <span class="ow">in</span> <span class="n">my_set</span>
+<span class="bp">False</span></code></pre>
+</figure>
+<p>And this check is very fast - much faster than doing the same<span> </span><code class="highlighter-rouge">in</code><span> </span>check with a list. (<em>The reason it is fast is a concept called hashing, which you can read about in detail<span> </span><a href="http://stackoverflow.com/questions/3949310/how-is-set-implemented">in this StackOverflow post</a>.</em>)</p>
+<p><span>而且此檢查非常快-比對</span><code class="highlighter-rouge">in</code><span><span>列表</span><span>進行相同</span><span>檢查</span><span>要快得多</span><span>。</span><span>（</span></span><em><span><span>之所以如此之快，是因為有一個稱為哈希的概念，您可以</span></span><a href="http://stackoverflow.com/questions/3949310/how-is-set-implemented"><span><span>在此StackOverflow帖子</span></span></a><span><span>中詳細了解</span><a href="http://stackoverflow.com/questions/3949310/how-is-set-implemented"><span>它</span></a><span>。</span></span></em><span><span>）</span></span></p>
+<p>Code organization代碼組織</p>
+<p>We briefly discussed some tips on working with lots of code in<span> </span><a href="https://www.practicepython.org/exercise/2016/08/03/29-tic-tac-toe-game.html">Exercise 29</a>, and I’ll add a few more here:</p>
+<p><span>我們在</span><a href="https://www.practicepython.org/exercise/2016/08/03/29-tic-tac-toe-game.html"><span><span>練習29中</span></span></a><span><span>簡要討論了使用大量代碼的一些技巧</span><span>，我將在此處添加更多信息：</span></span></p>
+<ul>
+<li>If you don’t like your code from Parts 1 and 2, just take any of the code from the<span> </span><a href="https://www.practicepython.org/solution/2016/10/15/30-pick-word-solutions.html">solution to Part 1</a><span> </span>or the<span> </span><a href="https://www.practicepython.org/solution/2017/01/08/31-guess-letters-solutions.html">solution to Part 2</a><span> </span>to start. Just because you wrote some code before, doesn’t mean you are locked in forever!</li>
+<li><span><span>如果您不喜歡</span></span><a href="https://www.practicepython.org/solution/2016/10/15/30-pick-word-solutions.html"><span><span>第1部分</span></span></a><span><span>和</span></span><a href="https://www.practicepython.org/solution/2017/01/08/31-guess-letters-solutions.html"><span><span>第2</span></span></a><span><a href="https://www.practicepython.org/solution/2016/10/15/30-pick-word-solutions.html"><span>部分</span></a><span>中的代碼，只需從</span><a href="https://www.practicepython.org/solution/2016/10/15/30-pick-word-solutions.html"><span>解決方案第1部分</span></a><span>或</span><a href="https://www.practicepython.org/solution/2017/01/08/31-guess-letters-solutions.html"><span>第2</span></a><a href="https://www.practicepython.org/solution/2016/10/15/30-pick-word-solutions.html"><span>部分</span></a><span>的</span><a href="https://www.practicepython.org/solution/2016/10/15/30-pick-word-solutions.html"><span>解決方案中選取</span></a><span>任何代碼</span><span>即可。</span><span>僅僅因為您之前編寫了一些代碼，並不意味著您將永遠被鎖定！</span></span></li>
+<li>Any piece of your code that is used more than once, put it into a function. We did a long discussion of functions in<span> </span><a href="https://www.practicepython.org/exercise/2014/04/16/11-check-primality-functions.html">Exercise 11</a>, if you want a review.</li>
+<li><span><span>您的代碼中多次使用的任何部分都將其放入函數中。</span><span>如果您想複習一下，</span><span>我們在</span></span><a href="https://www.practicepython.org/exercise/2014/04/16/11-check-primality-functions.html"><span><span>練習11中</span></span></a><span><span>對功能進行了長時間的討論</span><span>。</span></span></li>
+<li>Your functions should be small and easy to understand - think of it as a 3-year-old child; if you ask a 3-year-old to do too many things, they will get confused and not do exactly what you asked.</li>
+<li><span><span>您的功能應該小巧且易於理解-將其視為3歲的孩子；</span><span>如果您要求3歲的孩子做太多的事情，他們會感到困惑，而不能完全按照您的要求做。</span></span></li>
+</ul>
+<p>If you have any other code organization tips, leave them in the comments, would love to get a good discussion going.</p>
+<p><span>如果您有任何其他代碼組織提示，請將其保留在註釋中，希望能進行很好的討論。</span></p>
+<p>Happy coding!祝您編碼愉快！</p>
 <div actguid="d87f2e5b0a0001dc5069387d6759fef6" class="asx" inlineparams="inlineClient=%2Fsuperactivity%2Fassessment2%2FInlineAssessmentClient.swf&amp;activityMode=delivery&amp;activityContextGUID=d87f2e5b0a0001dc5069387d6759fef6&amp;userGUID=8cb7d5440a0001dc733be162e79ca0f0&amp;activityService=%2Fjcourse%2Fa2%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;">
 <div class="activitywrap purpose learnbydoing flash" id="dpch07_lbd17"></div>
 </div>
