@@ -1,0 +1,210 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>CMSiMDE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>40923228 cp2020</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">40923228 cp2020</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='HomePage.html'>HomePage</a><li><a href='Webside.html'>Webside</a><li class='has-children'><a href='HW1.html'>HW1</a><ul class='dropdown'><li class='has-children'><a href='PCH6-RAM Basics.html'>PCH6-RAM Basics</a><ul class='dropdown'><li><a href='Memory Modules.html'>Memory Modules</a><li><a href='Classifying Memory.html'>Classifying Memory</a><li><a href='Determining Type of Memory Based on Motherboard.html'>Determining Type of Memory Based on Motherboard</a><li><a href='History of RAM.html'>History of RAM</a><li><a href='Parity.html'>Parity</a><li><a href='Installing Memory Modules.html'>Installing Memory Modules</a><li><a href='Introduction to BIOS, CMOS, and Firmware.html'>Introduction to BIOS, CMOS, and Firmware</a><li><a href='Configuring the System BIOS.html'>Configuring the System BIOS</a></li></ul><li class='has-children'><a href='PCH 7-Expansion Cards, Audio, Video, and Storage.html'>PCH 7-Expansion Cards, Audio, Video, and Storage</a><ul class='dropdown'><li><a href='AGP Slots.html'>AGP Slots</a><li><a href='Processors.html'>Processors</a><li><a href='Video Displays and Video Cards.html'>Video Displays and Video Cards</a><li><a href='Install and Configure Expansion Cards.html'>Install and Configure Expansion Cards</a><li><a href='Storage Devices-Overview.html'>Storage Devices-Overview</a><li><a href='Storage Devices-Hard Disk Drives.html'>Storage Devices-Hard Disk Drives</a><li><a href='Storage Devices-Drive Interfaces.html'>Storage Devices-Drive Interfaces</a><li><a href='Storage Devices-Hot Swapping.html'>Storage Devices-Hot Swapping</a></li></li></ul></ul><li><a href='HW2.html'>HW2</a><li><a href='HW3.html'>HW3</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">Storage Devices-Hard Disk Drives << <a href='Storage Devices-Hard Disk Drives.html'>Previous</a> <a href='Storage Devices-Hot Swapping.html'>Next</a> >> Storage Devices-Hot Swapping<br /><h1>Storage Devices-Drive Interfaces</h1>
+<p id="N10678" lang="">Computers require several things to function well: a method to receive data input, a method to process data, a way to output data, and a way to store data. Data storage has evolved over the years, but the most common storage mechanism, the hard disk, has been around for more than 35 years. The only real change has been in physical size (they have gotten smaller), logical size (they can store much more data), speed, and connector types. The most common types of connectors are SATA, PATA/IDE, SCSI, floppy, eSATA, FireWire, USB, and network connections, each of which we will discuss.</p>
+<p lang="">計算機需要幾件事情才能正常運行：一種接收數據輸入的方法，一種處理數據的方法，一種輸出數據的方法以及一種存儲數據的方法。數據存儲已經發展了多年，但是最常見的存儲機制硬盤已經存在了35年以上。唯一真正的變化是物理大小（變得更小），邏輯大小（它們可以存儲更多數據），速度和連接器類型。連接器最常見的類型是SATA，PATA / IDE，SCSI，軟盤，eSATA，FireWire，USB和網絡連接，我們將分別討論它們。</p>
+<div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container">PATA (Parallel Advanced Technology Attachment) has been around since the 1980s, but used to be called IDE (Integrated Drive Electronics). This type of connector uses a cable made up of 40 wires or 80 wires (which supported cable select mode). Both types of cables had 40 pins on each end. The newer-style cables were color-coded, so that the blue connector attached to the motherboard, the black connector attached to the primary (or master) device, and the gray connector attached to the secondary (or slave) device. This connector type was used for hard disk drives, CD drives, DVD drives, and some tape backup drives. Each of these devices has a jumper on it that must be set to “master,” “slave,” or “cable select” mode. “Cable select” eliminated the need to manually assign the master or slave. Each cable could support up to two devices, but only one master or slave device could be used on each cable. The BIOS had to be configured properly before using these devices. In spite of improvements to the EIDE interface using Ultra Direct Memory Access (UDMA), Serial ATA (SATA) is not limited to four devices per channel and has much faster access times.</div>
+<div class="tw-ta-container hide-focus-ring tw-nfl">PATA（並行高級技術附件）自1980年代就出現了，但以前被稱為IDE（集成驅動電子設備）。這種類型的連接器使用由40線或80線組成的電纜（支持電纜選擇模式）。兩種類型的電纜的每端都有40個插針。較新樣式的電纜已進行了顏色編碼，因此藍色連接器連接至主板，黑色連接器連接至主（或主）設備，灰色連接器連接至輔助（或從屬）設備。此連接器類型用於硬盤驅動器，CD驅動器，DVD驅動器和某些磁帶備份驅動器。這些設備中的每一個都有跳線，必須將其設置為“主”，“從”或“電纜選擇”模式。 “電纜選擇”消除了手動分配主機或從機的需要。每條電纜最多可支持兩個設備，但是每條電纜上只能使用一個主設備或從設備。使用這些設備之前，必須正確配置BIOS。儘管使用超直接內存訪問（UDMA）對EIDE接口進行了改進，但串行ATA（SATA）不僅限於每個通道四個設備，而且訪問速度更快。</div>
+<div class="tw-ta-container hide-focus-ring tw-nfl">
+<div class="tw-ta-container hide-focus-ring tw-nfl" id="tw-target-rmn-container"><img alt="Photograph depicting three IDE drives, each rectangular, stacked on top of each other." class="popimg" id="_i_0" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH07/webcontent/PCH07/image28.png" title="Photograph depicting three IDE drives, each rectangular, stacked on top of each other."/></div>
+</div>
+<p id="N10684" lang="">IDE drive. Photo used under CC-BY-NC-ND license from<span> </span><a href="https://flic.kr/p/389w77" id="_i_1" lang="" target="_blank">Brian Barnett</a>.</p>
+<p><span class="imagewrap"><span class="caption" lang=""></span></span><span class="imagewrap"><span class="image"><img alt="Photograph depicting an IDE cable next to a SATA cable. The IDE cable is black with a blue, multi-pin connector. The SATA cable is red with a black connector." class="popimg" id="_i_2" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH07/webcontent/PCH07/image29.png" title="Photograph depicting an IDE cable next to a SATA cable. The IDE cable is black with a blue, multi-pin connector. The SATA cable is red with a black connector."/></span><span class="caption" lang=""></span></span></p>
+<p id="N10693" lang="">Drive cables. Photo used under CC-BY license from<span> </span><a href="https://flic.kr/p/8h6x3F" id="_i_3" lang="" target="_blank">gcg 2009</a>.</p>
+<p lang=""></p>
+<p lang=""></p>
+<p id="N1069C" lang="">SATA is the current connection method used for hard disks and optical drives. It is called serial because only a single device can be attached to each cable, and the data is transmitted in serial fashion (one bit at a time). These devices often do not have jumpers, but if they have one, it is used to configure the speed of data transfer or to enable a special feature like<span> </span><a aria-describedby="N1069F" class="extra" id=""></a>spread spectrum clocking<span> </span>. SATA is a peripheral device and is very fast, allowing for speeds of up to 6 Gbps for the newer version, or 3 Gbps for the older versions. The data cable is shaped like an L, with seven pins for data. The power cable is also L-shaped, but has 15 pins. Internal SATA ports can be converted to an eSATA (external SATA) port simply by using a header to connect the internal port.</p>
+<p lang="">SATA是用於硬盤和光盤驅動器的當前連接方法。之所以稱為串行，是因為每條電纜只能連接一個設備，並且數據以串行方式（一次一位）傳輸。這些設備通常沒有跳線，但如果有跳線，則可用於配置數據傳輸速度或啟用諸如擴頻時鐘等特殊功能。 SATA是外圍設備，速度非常快，新版本的速度高達6 Gbps，而舊版本的速度高達3 Gbps。數據電纜的形狀像L形，有七個用於數據傳輸的引腳。電源線也為L形，但有15針。只需使用接頭連接內部端口，即可將內部SATA端口轉換為eSATA（外部SATA）端口。</p>
+<p lang=""><img alt="Photograph depicting a SATA drive with the circuit board and connector exposed." class="popimg" id="_i_4" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH07/webcontent/PCH07/image30.png" title="Photograph depicting a SATA drive with the circuit board and connector exposed."/></p>
+<p id="N106AB" lang="">SATA drive. Photo used under CC-BY license from<span> </span><a href="https://flic.kr/p/8Fysrr" id="_i_5" lang="" target="_blank">Arkadiusz Sikorski</a>.</p>
+<p lang=""></p>
+<p lang=""></p>
+<p id="N106B4" lang="">SCSI, or small computer system interface, supports daisy-chaining of devices (internally or externally) with either seven devices (narrow SCSI) or 15 devices (wide SCSI). Each device in the chain is provided with a Device ID number that is configured using a selector switch, DIP (dual inline package) switch, or jumper block. SCSI is an older technology and has largely been replaced by SATA and eSATA. Narrow SCSI could only support speeds of up to 40 MBps, while wide SCSI could support up to 320 MBps.</p>
+<p lang="">SCSI或小型計算機系統接口支持將設備（內部或外部）與七個設備（窄SCSI）或15個設備（寬SCSI）進行菊花鏈連接。鏈中的每個設備都提供了一個設備ID編號，該ID使用選擇器開關，DIP（雙列直插式封裝）開關或跳線塊進行配置。 SCSI是一種較舊的技術，在很大程度上已被SATA和eSATA取代。窄SCSI只能支持高達40 MBps的速度，而寬SCSI可以支持高達320 MBps的速度。</p>
+<p lang=""><img alt="Photograph depicting an HP Surestore DAT-drive with two blue SCSI ports on the back. There is also a power cord port and a power on/off toggle button." class="popimg" id="_i_6" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH07/webcontent/PCH07/image31.png" title="Photograph depicting an HP Surestore DAT-drive with two blue SCSI ports on the back. There is also a power cord port and a power on/off toggle button."/></p>
+<p id="N106BD" lang="">HP Surestore DAT-drive with two blue SCSI ports on the back. Photo used under CC-BY-SA license from<span> </span><a href="https://flic.kr/p/7rzVde" id="_i_7" lang="" target="_blank">Gerben Wierda</a>.</p>
+<p lang=""></p>
+<br />Storage Devices-Hard Disk Drives << <a href='Storage Devices-Hard Disk Drives.html'>Previous</a> <a href='Storage Devices-Hot Swapping.html'>Next</a> >> Storage Devices-Hot Swapping</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        
