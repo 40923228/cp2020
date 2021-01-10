@@ -519,57 +519,388 @@ PC健康工具（溫度，電壓等）
 <h2>2-3</h2>
 <h1>HW3</h1>
 <h2>EX.10</h2>
-<p><span>List Overlap Comprehensions</span></p>
-<p><br/>Exercise 10 (and<span> </span><a href="https://www.practicepython.org/solution/2014/04/16/10-list-overlap-comprehensions-solutions.html">Solution</a>)</p>
+<div class="activityinfo"><span>練習10</span>
 <p>This week’s exercise is going to be revisiting an old exercise (see<span> </span><a href="https://www.practicepython.org/exercise/2014/03/05/05-list-overlap.html">Exercise 5</a>), except require the solution in a different way.</p>
 <p>Take two lists, say for example these two:</p>
+<p><span>本週的練習將重溫舊的練習（請參閱</span><a href="https://www.practicepython.org/exercise/2014/03/05/05-list-overlap.html"><span>練習5</span></a><span>），只是需要以其他方式解決。</span></p>
+<p><span>拿兩個列表，舉例來說，這兩個：</span></p>
 <figure class="highlight">
 <pre><code class="language-python" data-lang="python">	<span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">21</span><span class="p">,</span> <span class="mi">34</span><span class="p">,</span> <span class="mi">55</span><span class="p">,</span> <span class="mi">89</span><span class="p">]</span>
 	<span class="n">b</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">13</span><span class="p">]</span></code></pre>
 </figure>
 <p>and write a program that returns a list that contains only the elements that are common between the lists (without duplicates). Make sure your program works on two lists of different sizes. Write this<span> </span><s>in one line of Python</s><span> </span><em>using at least one list comprehension</em>. (<em>Hint: Remember<span> </span><a href="https://www.practicepython.org/exercise/2014/03/19/07-list-comprehensions.html">list comprehensions</a><span> </span>from Exercise 7</em>).</p>
+<p><span>並編寫一個程序，該程序返回一個列表，該列表僅包含列表之間的公共元素（無重複項）。確保您的程序可以在兩個不同大小的列表上運行。<em>使用至少一個列表理解</em></span><s><span>語句在一行Python中</span></s><span> </span><span>編寫。（<em>提示：記住</em><em>練習7中的</em><em><a href="https://www.practicepython.org/exercise/2014/03/19/07-list-comprehensions.html">列表理解</a></em>）。</span></p>
 <p><em>The original formulation of this exercise said to write the solution using one line of Python, but a few readers pointed out that this was impossible to do without using<span> </span><code class="highlighter-rouge">set</code>s that I had not yet discussed on the blog, so you can either choose to use the original directive and read about the<span> </span><a href="https://docs.python.org/3.3/library/stdtypes.html?highlight=set#set"><code class="highlighter-rouge">set</code><span> </span>command in Python 3.3</a>, or try to implement this on your own and use at least one list comprehension in the solution.</em></p>
+<p><em><span>並編寫一個程序，該程序返回一個列表，該列表僅包含列表之間的公共元素（無重複項）。確保您的程序可以在兩個不同大小的列表上運行。使用至少一個列表理解</span><s><span>語句在一行Python中</span></s><span> </span><span>編寫。（提示：記住練習7中的<a href="https://www.practicepython.org/exercise/2014/03/19/07-list-comprehensions.html">列表理解</a>）。</span></em></p>
 <p>Extra:</p>
+<p><span>額外：</span></p>
 <ul>
 <li>Randomly generate two lists to test this</li>
+<li><span>隨機生成兩個列表進行測試</span></li>
 </ul>
-<p>Discussion</p>
+Discussion</div>
+<div class="activityinfo"><span>討論區</span>
 <p>Concepts for this week:</p>
+<p><span>本週的概念：</span></p>
 <ul>
 <li>List comprehensions</li>
+<li><span><span>清單理解</span></span></li>
 <li>Random numbers, continued</li>
+<li><span><span>隨機數，續</span></span></li>
 </ul>
-<p>List comprehensions</p>
+List comprehensions</div>
+<div class="activityinfo"><span>清單理解</span>
 <p>We already discussed list comprehensions in<span> </span><a href="http://practicepython.blogspot.com/2014/03/exercise-7-list-comprehensions.html">Exercise 7</a>, but they can be made much more complicated.</p>
+<p><span>我們已經在</span><a href="http://practicepython.blogspot.com/2014/03/exercise-7-list-comprehensions.html"><span><span>練習7中</span></span></a><span><span>討論了列表理解</span><span>，但是可以使它們複雜得多。</span></span></p>
 <p>For example:</p>
+<p>例如:</p>
 <figure class="highlight">
 <pre><code class="language-python" data-lang="python">	<span class="n">x</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
 	<span class="n">y</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">15</span><span class="p">]</span>
 	<span class="n">allproducts</span> <span class="o">=</span> <span class="p">[</span><span class="n">a</span><span class="o">*</span><span class="n">b</span> <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">x</span> <span class="k">for</span> <span class="n">b</span> <span class="ow">in</span> <span class="n">y</span><span class="p">]</span></code></pre>
 </figure>
 <p>At the end of this piece of code,<span> </span><code class="highlighter-rouge">allproducts</code><span> </span>will contain the list<span> </span><code class="highlighter-rouge">[5, 10, 15, 10, 20, 30, 15, 30, 45]</code>. So you can put multiple for loops inside the comprehension. But you can also add more complicated conditionals:</p>
+<p><span>在這段代碼的最後，</span><code class="highlighter-rouge">allproducts</code><span><span>將包含list<span> </span></span></span><code class="highlighter-rouge">[5, 10, 15, 10, 20, 30, 15, 30, 45]</code><span><span>。</span><span>因此，您可以在理解中放入多個for循環。</span><span>但是您還可以添加更複雜的條件：</span></span></p>
 <figure class="highlight">
 <pre><code class="language-python" data-lang="python">	<span class="n">x</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
 	<span class="n">y</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">15</span><span class="p">]</span>
 	<span class="n">customlist</span> <span class="o">=</span> <span class="p">[</span><span class="n">a</span><span class="o">*</span><span class="n">b</span> <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">x</span> <span class="k">for</span> <span class="n">b</span> <span class="ow">in</span> <span class="n">y</span> <span class="k">if</span> <span class="n">a</span><span class="o">*</span><span class="n">b</span><span class="o">%</span><span class="mi">2</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">]</span></code></pre>
 </figure>
 <p>Now<span> </span><code class="highlighter-rouge">customlist</code><span> </span>contains<span> </span><code class="highlighter-rouge">[5, 15, 15, 45]</code><span> </span>because only the odd products are added to the list.</p>
+<p><span></span></p>
 <p>In general, the list comprehension takes the form:</p>
+<p><span>現在</span><code class="highlighter-rouge">customlist</code><span>包含，</span><code class="highlighter-rouge">[5, 15, 15, 45]</code><span>因為僅將奇數產品添加到列表中。</span></p>
+<p><span><span>通常，列表理解採用以下形式：</span></span></p>
 <figure class="highlight">
 <pre><code class="language-python" data-lang="python">	<span class="p">[</span><span class="n">EXPRESSION</span> <span class="n">FOR_LOOPS</span> <span class="n">CONDITIONALS</span><span class="p">]</span></code></pre>
 </figure>
 <p>as shown in the examples above.</p>
-<p>Random numbers, continued</p>
+<p><span>如以上示例所示。</span></p>
+Random numbers, continued</div>
+<div class="activityinfo"><span>隨機數，續</span></div>
+<div class="activityinfo">
 <p>Try to use the<span> </span><a href="https://docs.python.org/3.0/library/random.html">Python random documentation</a><span> </span>to figure out how to generate a random list. As a hint look below:</p>
+<p><span>嘗試使用</span><a href="https://docs.python.org/3.0/library/random.html"><span><span>Python隨機文檔</span></span></a><span><span>來弄清楚如何生成隨機列表。</span><span>提示如下：</span></span></p>
 <figure class="highlight">
 <pre><code class="language-python" data-lang="python">	<span class="n">a</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">),</span> <span class="mi">5</span><span class="p">)</span></code></pre>
 </figure>
 <p>This line of code will leave<span> </span><code class="highlighter-rouge">a</code><span> </span>containing a list of 5 random numbers from 0 to 99.</p>
-<p>Happy coding!</p>
+<p><span>這行代碼將</span><code class="highlighter-rouge">a</code><span><span>包含從0到99的5個隨機數的列表。</span></span></p>
+<p>Check Primality Functions<span> </span><img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/><span> </span><img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/><span> </span><img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/></p>
+<p><span>檢查基本功能<span> </span></span><img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/><span><span> </span></span><img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/><span><span> </span></span><img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/></p>
+</div>
+<p><span></span></p>
 <h2>EX.20</h2>
+<p>Exercise 20 (and Solution)</p>
+<p>Write a function that takes an ordered list of numbers (a list where the elements are in order from smallest to largest) and another number. The function decides whether or not the given number is inside the list and returns (then prints) an appropriate boolean.</p>
+<p>練習20（和解決方案）<br/>編寫一個函數，該函數接受一個有序的數字列表（一個元素從最小到最大的順序列表）和另一個數字。 該函數確定給定的數字是否在列表中，並返回（然後打印）適當的布爾值。</p>
+<p>Extras:</p>
+<p>附加功能</p>
+<p>Use binary search.使用二進制搜索。<br/>Discussion</p>
+<p>Topics:</p>
+<p>Booleans - True and False<br/>Equality testing<br/>Binary search<br/>討論區<br/>話題：</p>
+<p>布爾值-對與錯<br/>平等測試<br/>二進制搜索</p>
+<p>Booleans</p>
+<p>When you are writing programs, there is often a time when you need to make a decision about something based on the truthfulness of something else. Basically, you need to make a decision based on whether something is TRUE or something is FALSE.</p>
+<p>An obvious example is when using conditionals:</p>
+<p>布爾值<br/>在編寫程序時，通常會需要根據其他事物的真實性來做出決策。 基本上，您需要根據某物是TRUE還是FALSE來做出決定。</p>
+<p>一個明顯的例子是使用條件句時：</p>
+<p><br/><br/></p>
+<div>
+<div class="syntaxhighlighter py" id="highlighter_914547">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+<div class="line number2 index1 alt1">2</div>
+<div class="line number3 index2 alt2">3</div>
+<div class="line number4 index3 alt1">4</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="py plain">michele_age </code><code class="py keyword">=</code> <code class="py value">22</code></div>
+<div class="line number2 index1 alt1"><code class="py spaces">  </code><code class="py plain">truth_value </code><code class="py keyword">=</code> <code class="py plain">michele_age &gt; </code><code class="py value">17</code></div>
+<div class="line number3 index2 alt2"><code class="py spaces">  </code><code class="py keyword">if</code> <code class="py plain">(truth_value):</code></div>
+<div class="line number4 index3 alt1"><code class="py spaces">    </code><code class="py functions">print</code><code class="py plain">(</code><code class="py string">"Michele can see a rated R movie"</code><code class="py plain">)</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p><br/><br/></p>
+<p>(We talked about this idea of conditionals in a previous post.)</p>
+<p>But what is happening behind the scenes is that the statement michele_age &gt; 17 is being evaluated into a type that is either True or False. This is then getting stored inside the variable truth_value, and then the decision is being made inside the conditional.</p>
+<p>Here is another example:</p>
+<p>（我們在上一篇文章中談到了條件式的想法。）</p>
+<p>但是幕後發生的事情是，語句michele_age&gt; 17正在被評估為True或False類型。 然後將其存儲在變量true_value中，然後在條件中進行決策。</p>
+<p>這是另一個示例：</p>
+<div>
+<div class="syntaxhighlighter py" id="highlighter_903896">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+<div class="line number2 index1 alt1">2</div>
+<div class="line number3 index2 alt2">3</div>
+<div class="line number4 index3 alt1">4</div>
+<div class="line number5 index4 alt2">5</div>
+<div class="line number6 index5 alt1">6</div>
+<div class="line number7 index6 alt2">7</div>
+<div class="line number8 index7 alt1">8</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="py keyword">while</code> <code class="py color1">True</code><code class="py plain">:</code></div>
+<div class="line number2 index1 alt1"><code class="py spaces">   </code><code class="py plain">age </code><code class="py keyword">=</code> <code class="py functions">input</code><code class="py plain">(</code><code class="py string">"How old are you? "</code><code class="py plain">)</code></div>
+<div class="line number3 index2 alt2"><code class="py spaces">   </code><code class="py keyword">if</code> <code class="py plain">age &gt;</code><code class="py keyword">=</code> <code class="py value">17</code><code class="py plain">: </code></div>
+<div class="line number4 index3 alt1"><code class="py spaces">     </code><code class="py functions">print</code><code class="py plain">(</code><code class="py string">"can see a rated R movie"</code><code class="py plain">)</code></div>
+<div class="line number5 index4 alt2"><code class="py spaces">   </code><code class="py keyword">elif</code> <code class="py plain">age &lt; </code><code class="py value">17</code> <code class="py keyword">and</code> <code class="py plain">age &gt; </code><code class="py value">12</code><code class="py plain">:</code></div>
+<div class="line number6 index5 alt1"><code class="py spaces">     </code><code class="py functions">print</code><code class="py plain">(</code><code class="py string">"can see a rated PG-13 movie"</code><code class="py plain">)</code></div>
+<div class="line number7 index6 alt2"><code class="py spaces">   </code><code class="py keyword">else</code><code class="py plain">: </code></div>
+<div class="line number8 index7 alt1"><code class="py spaces">     </code><code class="py functions">print</code><code class="py plain">(</code><code class="py string">"can only see rated PG movies"</code><code class="py plain">)</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p></p>
+<p></p>
+<p>What the while True statement does at the beginning of the code segment is continue asking for an age and printing a response - it never stops. (To stop it, press CTRL-C in a terminal or in the Python shell).</p>
+<p>These types - True and False are called boolean types or boolean variables. They can only take on two values, either True or False.</p>
+<p>For more extensive reading on Python booleans, take a look at these resources.</p>
+<p></p>
+<p>而True語句在代碼段的開頭所做的是繼續詢問年齡並打印響應-它永遠不會停止。 （要停止它，請在終端或Python Shell中按CTRL-C）。<br/>這些類型-True和False稱為布爾類型或布爾變量。 它們只能採用兩個值，即True或False。</p>
+<p>有關Python布爾值的更多詳細信息，請查看這些資源。</p>
+<p></p>
+<p>Equality testing on strings</p>
+<p>字符串相等性測試</p>
+<p></p>
+<p>Scenarios come up where you need to test if things are equal to each other - numbers or strings or something else. We covered this idea in a previous post, but it is worth returning to again, this time for strings.</p>
+<p>Good thing it’s easy!</p>
+<p>Remember, comparing numbers for equality is done with an == sign, like so:</p>
+<p></p>
+<div>
+<div class="syntaxhighlighter py" id="highlighter_935961">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+<div class="line number2 index1 alt1">2</div>
+<div class="line number3 index2 alt2">3</div>
+<div class="line number4 index3 alt1">4</div>
+<div class="line number5 index4 alt2">5</div>
+<div class="line number6 index5 alt1">6</div>
+<div class="line number7 index6 alt2">7</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="py plain">age </code><code class="py keyword">=</code> <code class="py value">21</code></div>
+<div class="line number2 index1 alt1"><code class="py spaces"> </code><code class="py keyword">if</code> <code class="py plain">age </code><code class="py keyword">=</code><code class="py keyword">=</code> <code class="py value">21</code><code class="py plain">:</code></div>
+<div class="line number3 index2 alt2"><code class="py spaces">   </code><code class="py functions">print</code><code class="py plain">(</code><code class="py string">"You are 21!"</code><code class="py plain">)</code></div>
+<div class="line number4 index3 alt1"><code class="py spaces"> </code><code class="py keyword">elif</code> <code class="py plain">age &gt; </code><code class="py value">21</code><code class="py plain">:</code></div>
+<div class="line number5 index4 alt2"><code class="py spaces">   </code><code class="py functions">print</code><code class="py plain">(</code><code class="py string">"You're old."</code><code class="py plain">)</code></div>
+<div class="line number6 index5 alt1"><code class="py spaces"> </code><code class="py keyword">else</code><code class="py plain">:</code></div>
+<div class="line number7 index6 alt2"><code class="py spaces">   </code><code class="py functions">print</code><code class="py plain">(</code><code class="py string">"Young one!"</code><code class="py plain">)</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<pre><br/><br/></pre>
+<p>出現場景時，您需要測試事物是否彼此相等-數字或字符串或其他。 我們在上一篇文章中介紹了這個想法，但是這次還是值得再次討論的。</p>
+<p>好東西很容易！</p>
+<p>請記住，比較數字是否相等是使用==符號完成的，如下所示：</p>
+<p></p>
+<div>
+<div class="syntaxhighlighter py" id="highlighter_40559">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+<div class="line number2 index1 alt1">2</div>
+<div class="line number3 index2 alt2">3</div>
+<div class="line number4 index3 alt1">4</div>
+<div class="line number5 index4 alt2">5</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="py plain">password </code><code class="py keyword">=</code> <code class="py string">"unsafepassword"</code></div>
+<div class="line number2 index1 alt1"><code class="py keyword">if</code> <code class="py plain">password </code><code class="py keyword">=</code><code class="py keyword">=</code> <code class="py string">"unsafepassword"</code><code class="py plain">:</code></div>
+<div class="line number3 index2 alt2"><code class="py spaces">  </code><code class="py functions">print</code><code class="py plain">(</code><code class="py string">"You may enter."</code><code class="py plain">)</code></div>
+<div class="line number4 index3 alt1"><code class="py keyword">else</code><code class="py plain">:</code></div>
+<div class="line number5 index4 alt2"><code class="py spaces">  </code><code class="py functions">print</code><code class="py plain">(</code><code class="py string">"Try again!"</code><code class="py plain">)</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p><br/><br/>Turns out, comparing strings is equally (hehe..) simple, using a == to check for equality and != to check for inequality.</p>
+<p>事實證明，使用==來檢查是否相等，使用！=來檢查不相等，比較字符串同樣簡單（hehe ..）。</p>
+<p></p>
+<p>Or, a more practical password-checking piece of code:</p>
+<p></p>
+<p></p>
+<div>
+<div class="syntaxhighlighter py" id="highlighter_376795">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+<div class="line number2 index1 alt1">2</div>
+<div class="line number3 index2 alt2">3</div>
+<div class="line number4 index3 alt1">4</div>
+<div class="line number5 index4 alt2">5</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="py plain">real_password </code><code class="py keyword">=</code> <code class="py string">"unsafepassword"</code></div>
+<div class="line number2 index1 alt1"><code class="py spaces">  </code><code class="py plain">user_password </code><code class="py keyword">=</code> <code class="py functions">input</code><code class="py plain">(</code><code class="py string">"Enter the password: "</code><code class="py plain">)</code></div>
+<div class="line number3 index2 alt2"><code class="py spaces">  </code><code class="py keyword">while</code> <code class="py plain">user_password !</code><code class="py keyword">=</code> <code class="py plain">real_password:</code></div>
+<div class="line number4 index3 alt1"><code class="py spaces">    </code><code class="py plain">user_password </code><code class="py keyword">=</code> <code class="py functions">input</code><code class="py plain">(</code><code class="py string">"Enter the password: "</code><code class="py plain">)</code></div>
+<div class="line number5 index4 alt2"><code class="py spaces">  </code><code class="py functions">print</code><code class="py plain">(</code><code class="py string">"You may enter!"</code><code class="py plain">)</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<pre><br/><br/></pre>
+<p>或者，使用更實用的密碼檢查代碼：</p>
+<p></p>
+<p>Binary search</p>
+<p></p>
+<p></p>
+<p><br/>二進制搜索</p>
+<p></p>
+<p><br/>There are a number of ways to search for elements in a list, and there is no one correct way to do so. The point of this exercise is to get you thinking about possible ways to search for elements in the list, in an entire sequence of exercises about lists, searching, and sorting. This exercise might seem silly and easy at first, but the more you dive into this topic, the more difficult it becomes.</p>
+<p>有多種方法可以搜索列表中的元素，但沒有一種正確的方法可以搜索列表中的元素。 該練習的目的是讓您思考有關列表，搜索和排序的整個練習序列中搜索列表中元素的可能方法。 剛開始時，此練習可能看起來很愚蠢且容易，但是您越深入該主題，就越困難。</p>
+<p></p>
+<p>The word “binary” means there are two choices (in computers, often this is 0 or 1, but it really means any choice between two things). “Search” is to look for something. So the main idea behind binary search is to look for something in a way that gives you a decision tree for where to look, containing two choices. Let me give you an example:</p>
+<p>“二進制”一詞表示有兩種選擇（在計算機中，通常是0或1，但實際上表示在兩種情況之間可以選擇）。 “搜索”是尋找東西。 因此，二進制搜索背後的主要思想是以某種方式查找內容，該方式可以為您提供決策樹，以查找位置，其中包含兩個選擇。 讓我舉一個例子：</p>
+<p>Let’s take the list a = [1, 3, 5, 30, 42, 43, 500]. It is an “ordered list”, or a list where the elements in the list go from smaller to larger. Let’s say we want to know whether the element 9 is in the list or not. Here is what we do:</p>
+<p>讓我們以列表= [1、3、5、30、42、43、500]為例。 它是一個“有序列表”，或者是列表中元素從小到大的列表。 假設我們想知道元素9是否在列表中。 這是我們的工作：</p>
+<p>Look at the middle element in the list - it is ‘30’. * ‘9 &lt; 30’, so let us ignore the elements to the right of ‘30’.<br/>The new list we are looking at is now [1, 3, 5].<br/>Look at the middle element in this new list - it is 3.<br/>‘9 &gt; 3’, so ignore the elements to the left of 3.<br/>The new list we are looking at is [5].<br/>The list has one element and it is not 9.<br/>9 is not in the list.<br/>查看列表中的中間元素-它是“ 30”。 *“ 9 &lt;30”，因此我們忽略“ 30”右側的元素。<br/>現在，我們正在查看的新列表為[1、3、5]。<br/>看一下這個新列表的中間元素-是3。<br/>‘9&gt; 3’，因此忽略3左側的元素。<br/>我們正在查看的新列表為[5]。<br/>該列表只有一個元素，而不是9。<br/>9不在列表中。</p>
+<p>What the example shows is that in an ordered list, knowing how the element you are looking for compares to another element in the list splits the list in two - one half where the element can be, and one where it definitely cannot be. In the case where our list contains millions of elements, knowing that we can cut the “search space” in half is a great increase in efficiency.</p>
+<p>該示例顯示的是，在有序列表中，知道要查找的元素與列表中另一個元素的比較方式，將列表分為兩部分-元素可以位於其中一半，而絕對不能位於其中。 在我們的列表包含數百萬個元素的情況下，知道我們可以將“搜索空間”削減一半，這將大大提高效率。</p>
+<p>When you are writing the solution, first try to write it without binary search. Then when you want to try implementing binary search, write a separate function. In the solution I will give an example for how to write a binary search in Python.</p>
+<p>在編寫解決方案時，請首先嘗試在不進行二進制搜索的情況下編寫它。 然後，當您想嘗試實現二進制搜索時，編寫一個單獨的函數。 在解決方案中，我將給出一個示例，說明如何使用Python編寫二進制搜索。</p>
+<div class="activityinfo"><span></span></div>
+<div class="activityinfo"></div>
 <h2>EX.32</h2>
 <div actguid="d87f2e5b0a0001dc5069387d6759fef6" class="asx" inlineparams="inlineClient=%2Fsuperactivity%2Fassessment2%2FInlineAssessmentClient.swf&amp;activityMode=delivery&amp;activityContextGUID=d87f2e5b0a0001dc5069387d6759fef6&amp;userGUID=8cb7d5440a0001dc733be162e79ca0f0&amp;activityService=%2Fjcourse%2Fa2%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;">
-<div class="activitywrap purpose learnbydoing flash" id="dpch07_lbd17"></div>
+<div class="activitywrap purpose learnbydoing flash" id="dpch07_lbd17">
+<h3>Hangman＆猜單詞遊戲</h3>
+<p>Exercise 32 (and<span><span> </span>Solution</span>)/練習32（和解決方案）</p>
+<p>This exercise is Part 3 of 3 of the Hangman exercise series. The other exercises are: Part 1 and Part 2.</p>
+<p>本練習是《 Hangman》練習系列3的第3部分。其他練習是：第1部分和第2部分。</p>
+<p><em>Y</em>ou can start your Python journey anywhere, but to finish this exercise you will have to have finished Parts 1 and 2 or use the solutions (Part 1 and Part 2).</p>
+<p>您可以在任何地方開始Python之旅，但是要完成本練習，您將必須完成第1部分和第2部分或使用解決方案（第1部分和第2部分）。</p>
+<p>In this exercise, we will finish building Hangman. In the game of Hangman, the player only has 6 incorrect guesses (head, body, 2 legs, and 2 arms) before they lose the game.</p>
+<p><span>在本練習中，我們將完成“ Hangman”的構建。</span><span>在《 Hangman》遊戲中，玩家在輸掉遊戲前只有6個錯誤的猜測（頭部，身體，2條腿和2條手臂）。</span></p>
+<p>In Part 1, we loaded a random word list and picked a word from it. In Part 2, we wrote the logic for guessing the letter and displaying that information to the user. In this exercise, we have to put it all together and add logic for handling guesses.</p>
+<p><span>在第1部分中，我們加載了一個隨機單詞列表並從中選擇一個單詞。</span><span>在第2部分中，我們編寫了猜測字母並將該信息顯示給用戶的邏輯。</span><span>在本練習中，我們必須將所有內容放在一起並添加邏輯以處理猜測。</span></p>
+<p>Copy your code from Parts 1 and 2 into a new file as a starting point. Now add the following features:</p>
+<p><span>將您的代碼從第1部分和第2部分複製到一個新文件中作為起點。</span><span>現在添加以下功能：</span></p>
+<ul>
+<li>Only let the user guess 6 times, and tell the user how many guesses they have left.</li>
+<li>Keep track of the letters the user guessed. If the user guesses a letter they already guessed, don’t penalize them - let them guess again.</li>
+<li><span><span>僅讓用戶猜測6次，然後告訴用戶他們還剩下多少猜測。</span></span></li>
+<li><span><span>跟踪用戶猜測的字母。</span><span>如果用戶猜出了他們已經猜出的字母，請不要對它們進行懲罰-讓他們再猜一次。</span></span></li>
+</ul>
+<p>Optional additions:</p>
+<p><span>可選的補充：</span></p>
+<ul>
+<li>When the player wins or loses, let them start a new game.</li>
+<li>Rather than telling the user<span> </span><code class="highlighter-rouge">"You have 4 incorrect guesses left"</code>, display some picture art for the Hangman.<span> </span><em>This is challenging - do the other parts of the exercise first!</em></li>
+<li><span><span>當玩家贏或輸時，讓他們開始新的遊戲。</span></span></li>
+<li><span><span>不要告訴用戶</span></span><code class="highlighter-rouge">"You have 4 incorrect guesses left"</code><span><span>，</span><span>而是</span><span>為the子手展示一些圖畫。</span></span><em><span><span>這具有挑戰性-首先進行練習的其他部分！</span></span></em><em></em></li>
+</ul>
+<p>Your solution will be a lot cleaner if you make use of functions to help you!</p>
+<p><span>如果您使用功能來幫助您，您的解決方案將變得更加干淨！</span></p>
+<p>Concepts</p>
+<p><span>概念</span></p>
+<ul>
+<li>Sets</li>
+<li>Code organization</li>
+<li><span><span>套裝</span></span></li>
+<li><span><span>代碼組織</span></span></li>
+</ul>
+<p>Sets</p>
+<p>套裝</p>
+<p>We already discussed sets in Exercise 14, but here is a brief summary:</p>
+<p><span>我們已經在練習14中</span><span><span>討論了集合</span><span>，但這是一個簡短的摘要：</span></span></p>
+<ul>
+<li>Sets, like lists, store a collection of items</li>
+<li>The collection of items in a set are unique. There cannot be any repeated elements.</li>
+<li><span><span>集合（如列表）存儲項目的集合</span></span></li>
+<li><span><span>集合中的項目集合是唯一的。</span><span>不能有任何重複的元素。</span></span></li>
+</ul>
+<p>The only “gotcha” is that you cannot have a set of lists - each element in the set must be <span>hashable</span>. Basically this means you can’t have elements that can change in a set, so the objects in your set should be integers or strings. The reason and distinction are not super important; the most important thing to know is that sets are most useful when you want a set of integers or strings, rather than a set of lists.</p>
+<p><span>唯一的“陷阱”是您不能擁有一組列表-列表中的每個元素都必須是可散列的</span><span><span>。</span><span>基本上，這意味著您不能在集合中更改任何元素，因此集合中的對象應為整數或字符串。</span><span>原因和區別並不重要。</span><span>要知道的最重要的一點是，當您需要一組整數或字符串而不是一組列表時，集合最有用。</span></span></p>
+<p>In Python:</p>
+<p><span>在Python中：</span></p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">my_list</span><span class="p">)</span>
+<span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">my_set</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="p">}</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">my_set</span><span class="p">)</span>
+<span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="p">}</span></code></pre>
+</figure>
+<p>To add elements to a set, use the<span> </span><code class="highlighter-rouge">.add()</code><span> </span>method:</p>
+<p><span>要將元素添加到集合中，請使用</span><code class="highlighter-rouge">.add()</code><span><span>方法：</span></span></p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="n">my_set</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>  <span class="c"># makes an empty set</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">my_set</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>  <span class="c"># adds the number 5</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">my_set</span><span class="p">)</span>
+<span class="p">{</span><span class="mi">5</span><span class="p">}</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">my_set</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s">"Michele"</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">my_set</span><span class="p">)</span>
+<span class="p">{</span><span class="mi">5</span><span class="p">,</span> <span class="s">"Michele"</span><span class="p">}</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">my_set</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">my_set</span><span class="p">)</span>
+<span class="p">{</span><span class="mi">5</span><span class="p">,</span> <span class="s">"Michele"</span><span class="p">}</span></code></pre>
+</figure>
+<p>The advantage of sets is that all the elements in it are unique. This makes it very easy to check whether an element is already in the set. All you need to do is ask<span> </span><code class="highlighter-rouge">elem in my_set</code>:</p>
+<p><span>集的優點是其中的所有元素都是唯一的。這使得檢查元素是否已經在集合中變得非常容易。您需要做的只是問</span><code class="highlighter-rouge">elem in my_set</code><span><span>：</span></span></p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="n">my_set</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">}</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">1</span> <span class="ow">in</span> <span class="n">my_set</span>
+<span class="bp">True</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">4</span> <span class="ow">in</span> <span class="n">my_set</span>
+<span class="bp">False</span></code></pre>
+</figure>
+<p>And this check is very fast - much faster than doing the same <code class="highlighter-rouge">in</code> check with a list. (The reason it is fast is a concept called hashing, which you can read about in detail in this StackOverflow post.)</p>
+<p>而且此檢查非常快-比<code class="highlighter-rouge">in</code>使用列表進行相同檢查要快得多。（之所以如此之快，是因為有一個稱為哈希的概念，您可以在此StackOverflow帖子中詳細了解它。）</p>
+<p>Code organization</p>
+<p><span>代碼組織</span></p>
+<p>We briefly discussed some tips on working with lots of code in<span><span> </span>Exercise 29</span>, and I’ll add a few more here:</p>
+<p><span>我們在練習29中</span><span><span>簡要討論了使用大量代碼的一些技巧</span><span>，我將在此處添加更多信息：</span></span></p>
+<ul>
+<li>If you don’t like your code from Parts 1 and 2, just take any of the code from the<span><span> </span>solution to Part 1 or the solution to Part 2</span><span> </span>to start. Just because you wrote some code before, doesn’t mean you are locked in forever!</li>
+<li>Any piece of your code that is used more than once, put it into a function. We did a long discussion of functions in<span><span> </span>Exercise 11</span>, if you want a review.</li>
+<li>Your functions should be small and easy to understand - think of it as a 3-year-old child; if you ask a 3-year-old to do too many things, they will get confused and not do exactly what you asked.</li>
+<li><span><span>如果您不喜歡第1部分和第2部分中的代碼，只需從解決方案第1部分或第2部分的解決方案中選取任</span></span><span><span>何代碼</span><span>即可。</span><span>僅僅因為您之前編寫了一些代碼，並不意味著您將永遠被鎖定！</span></span></li>
+<li><span><span>您的代碼中多次使用的任何部分都將其放入函數中。</span><span>如果您想複習一下，</span><span>我們在練習11中</span></span><span><span>對功能進行了長時間的討論</span><span>。</span></span></li>
+<li><span><span>您的功能應該小巧且易於理解-將其視為3歲的孩子；</span><span>如果您要求3歲的孩子做太多的事情，他們會感到困惑，而不能完全按照您的要求做。</span></span></li>
+</ul>
+<p>If you have any other code organization tips, leave them in the comments, would love to get a good discussion going.</p>
+<p><span>如果您有任何其他代碼組織提示，請將其保留在註釋中，希望能進行很好的討論。</span></p>
+</div>
 </div>
 <div actguid="d87f2e390a0001dc594310714346795a" class="asx" inlineparams="inlineClient=%2Fsuperactivity%2Fassessment2%2FInlineAssessmentClient.swf&amp;activityMode=delivery&amp;activityContextGUID=d87f2e390a0001dc594310714346795a&amp;userGUID=882b235c0a0001dc5ea57552e24cafcb&amp;activityService=%2Fjcourse%2Fa2%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;">
 <div class="activitywrap purpose learnbydoing flash" id="dpch07_lbd09">
